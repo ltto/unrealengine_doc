@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Editor\"\u003eEditor\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Editor/ViewportInteraction\"\u003eViewportInteraction\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eInheritance Hierarchy\u003c/h2\u003e\n\n\u003cul\u003e\n  \u003cli\u003eUSceneComponent\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Editor/ViewportInteraction/UGizmoHandleGroup\"\u003eUGizmoHandleGroup\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003eUAxisGizmoHandleGroup\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Editor/ViewportInteraction\"\u003eViewportInteraction\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Source/Editor/ViewportInteraction/Public/VIGizmoHandle.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"VIGizmoHandle.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003eUCLASS \u0026#40;Abstract\u0026#41;  \nclass UAxisGizmoHandleGroup : public UGizmoHandleGroup  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003eBase class for gizmo handles on axis\u003c/p\u003e\n\n\u003ch2\u003eFunctions\u003c/h2\u003e\n\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/d7565322-319e-486e-9cf3-a977875165dd/api_function_protected.png\" alt=\"Protected function\" loading=\"lazy\" title=\"Protected function\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003evoid\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Editor/ViewportInteraction/UAxisGizmoHandleGroup/CreateHandles\"\u003eCreateHandles\u003c/a\u003e\n (\nUStaticMesh* HandleMesh,\u003cbr\u003e\nconst FString\u0026 HandleComponentName\u003cbr\u003e\n )\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003eCreates mesh for every axis\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/0ed688ca-8d9f-4f81-85b1-6408d94cb867/api_function_protected.png\" alt=\"Protected function\" loading=\"lazy\" title=\"Protected function\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003evoid\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Editor/ViewportInteraction/UAxisGizmoHandleGroup/UpdateHandlesRel-\"\u003eUpdateHandlesRelativeTransformOnAxis\u003c/a\u003e\n (\nconst FTransform\u0026 HandleToCenter,\u003cbr\u003e\nconst float AnimationAlpha,\u003cbr\u003e\nconst float GizmoScale,\u003cbr\u003e\nconst float GizmoHoverScale,\u003cbr\u003e\nconst FVector\u0026 ViewLocation,\u003cbr\u003e\nUActorComponent* DraggingHandle,\u003cbr\u003e\nconst TArray\u003c UActorComponent* \u003e\u0026 HoveringOverHandles\u003cbr\u003e\n )\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003eCalculates the transforms of meshes of this handlegroup\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "Base class for gizmo handles on axis",
+  "document_type": null,
+  "hash_id": "4mYyA",
+  "id": 3331011,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "nPv85",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Editor/ViewportInteraction/UAxisGizmoHandleGroup",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "UAxisGizmoHandleGroup",
+  "updated_at": "2024-11-13T00:56:42.724+00:00",
+  "views_count": 0
+}

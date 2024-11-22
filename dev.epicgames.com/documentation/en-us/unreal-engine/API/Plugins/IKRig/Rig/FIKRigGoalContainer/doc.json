@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/IKRig\"\u003eIKRig\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/IKRig/Rig\"\u003eRig\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/IKRig\"\u003eIKRig\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/Animation/IKRig/Source/IKRig/Public/Rig/IKRigDataTypes.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"Rig/IKRigDataTypes.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003eUSTRUCT \u0026#40;\u0026#41;  \nstruct FIKRigGoalContainer  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eFunctions\u003c/h2\u003e\n\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/d6b5f27d-a0c6-4238-99d4-fbc765d53be6/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003evoid\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/IKRig/Rig/FIKRigGoalContainer/Empty\"\u003eEmpty\u003c/a\u003e ()\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003eClear out all Goals in container.\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/a49443af-b8f7-48ef-b411-a72a8ada9d39/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/5492ece8-d8a8-4b12-adb8-2e8fa4bb1567/api_function_const.png\" alt=\"Const\" loading=\"lazy\" title=\"Const\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003econst \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/IKRig/Rig/FIKRigGoal\"\u003eFIKRigGoal\u003c/a\u003e *\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/IKRig/Rig/FIKRigGoalContainer/FindGoalByName\"\u003eFindGoalByName\u003c/a\u003e\n (\nconst \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/UObject/FName\"\u003eFName\u003c/a\u003e\u0026 GoalName\u003cbr\u003e\n )\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003eGet an IK goal with the given name.\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/50f3f6ba-1efe-4bed-bf47-3f7ff94c814d/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/3c900b0d-95b6-4f89-88ca-ca04fcd88dea/api_function_const.png\" alt=\"Const\" loading=\"lazy\" title=\"Const\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003econst \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/TraceLog/TArray\"\u003eTArray\u003c/a\u003e\u003c \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/IKRig/Rig/FIKRigGoal\"\u003eFIKRigGoal\u003c/a\u003e \u003e \u0026\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/IKRig/Rig/FIKRigGoalContainer/GetGoalArray\"\u003eGetGoalArray\u003c/a\u003e ()\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003eGet read-only access to array of Goals.\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/50a3fee2-4bb8-4782-b107-f7f535af4278/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003evoid\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/IKRig/Rig/FIKRigGoalContainer/SetIKGoal/1\"\u003eSetIKGoal\u003c/a\u003e\n (\nconst \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/IKRig/Rig/FIKRigGoal\"\u003eFIKRigGoal\u003c/a\u003e\u0026 InGoal\u003cbr\u003e\n )\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003eSet an IK goal to go to a specific location and rotation (in the specified space) blended by alpha.\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/9c53c445-2171-4f49-95ef-9077660c7362/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003evoid\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/IKRig/Rig/FIKRigGoalContainer/SetIKGoal/2\"\u003eSetIKGoal\u003c/a\u003e\n (\nconst \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/IKRig/Rig/UIKRigEffectorGoal\"\u003eUIKRigEffectorGoal\u003c/a\u003e* InEffectorGoal\u003cbr\u003e\n )\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003eSet an IK goal to go to a specific location and rotation (in the specified space) blended by alpha.\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "",
+  "document_type": null,
+  "hash_id": "GVOr01",
+  "id": 3931613,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "n00bv5",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/IKRig/Rig/FIKRigGoalContainer",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "FIKRigGoalContainer",
+  "updated_at": "2024-11-13T06:24:00.016+00:00",
+  "views_count": 0
+}

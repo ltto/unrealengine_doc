@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime\"\u003eRuntime\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Engine\"\u003eEngine\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Engine/Audio\"\u003eAudio\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eInheritance Hierarchy\u003c/h2\u003e\n\n\u003cul\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/CoreUObject/UObject/IInterface\"\u003eIInterface\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003eIActorSoundParameterInterface\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Engine\"\u003eEngine\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Source/Runtime/Engine/Classes/Audio/ActorSoundParameterInterface.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"Audio/ActorSoundParameterInterface.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003eclass IActorSoundParameterInterface : public IInterface  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003eInterface used to allow an actor to automatically populate any sounds with parameters\u003c/p\u003e\n\n\u003ch2\u003eFunctions\u003c/h2\u003e\n\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/bf617799-99f9-4663-8116-c744505bf34f/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/a849605e-f426-4579-b481-c24061f03c7b/api_function_const.png\" alt=\"Const\" loading=\"lazy\" title=\"Const\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/97f7090e-e5cc-453a-b618-920095417442/api_function_meta.png\" alt=\"UFunction\" loading=\"lazy\" title=\"UFunction\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/1d230757-a865-49b5-ae1b-1099c5231b65/api_function_meta_blueprint.png\" alt=\"Category, Meta\" loading=\"lazy\" title=\"Category, Meta\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/510478d1-d50b-4d34-a5a0-cc9a67cabd4e/api_function_meta_other.png\" alt=\"blueprintnativeevent\" loading=\"lazy\" title=\"blueprintnativeevent\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003evoid\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Engine/Audio/IActorSoundParameterInterface/GetActorSoundParams\"\u003eGetActorSoundParams\u003c/a\u003e\n (\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/TraceLog/TArray\"\u003eTArray\u003c/a\u003e\u003c \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/AudioExtensions/FAudioParameter\"\u003eFAudioParameter\u003c/a\u003e \u003e\u0026 Params\u003cbr\u003e\n )\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003eOverrides logic for gathering AudioParameters to set by default when an AudioComponent/ActiveSound plays with a given actor as its Owner.\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/5f01ca59-7243-4ba0-bab5-1a79e186c4c1/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/1a2d1c67-69f1-4e3e-a925-325b6eaa8142/api_function_const.png\" alt=\"Const\" loading=\"lazy\" title=\"Const\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/b0119a3c-5adb-4034-83ac-5e3f6344f24c/api_function_meta.png\" alt=\"UFunction\" loading=\"lazy\" title=\"UFunction\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/3d3163f1-00fe-4576-91e1-7c430fb76cf7/api_function_meta_blueprint.png\" alt=\"Category, Meta\" loading=\"lazy\" title=\"Category, Meta\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/e97fe9e9-aaed-4e8a-a85d-31a7f2e6338f/api_function_meta_other.png\" alt=\"blueprintnativeevent\" loading=\"lazy\" title=\"blueprintnativeevent\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003evoid\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Engine/Audio/IActorSoundParameterInterface/GetActorSoundPar-\"\u003eGetActorSoundParams_Implementation\u003c/a\u003e\n (\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/TraceLog/TArray\"\u003eTArray\u003c/a\u003e\u003c \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/AudioExtensions/FAudioParameter\"\u003eFAudioParameter\u003c/a\u003e \u003e\u0026 Params\u003cbr\u003e\n )\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "Interface used to allow an actor to automatically populate any sounds with parameters",
+  "document_type": null,
+  "hash_id": "nQY6P",
+  "id": 3577435,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "V96YV",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Runtime/Engine/Audio/IActorSoundParameterInterface",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "IActorSoundParameterInterface",
+  "updated_at": "2024-11-13T19:05:02.904+00:00",
+  "views_count": 0
+}

@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/Buoyancy\"\u003eBuoyancy\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eInheritance Hierarchy\u003c/h2\u003e\n\n\u003cul\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Chaos/Chaos/FSimCallbackInput\"\u003eFSimCallbackInput\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003eFBuoyancySubsystemSimCallbackInput\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/Buoyancy\"\u003eBuoyancy\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/Experimental/Buoyancy/Source/Runtime/Public/BuoyancySubsystem.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"BuoyancySubsystem.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003estruct FBuoyancySubsystemSimCallbackInput : public Chaos::FSimCallbackInput  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003eBuoyancy Sim Callback\u003c/p\u003e\n\n\u003ch2\u003eVariables\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/5aca010c-c94e-4654-adca-147f344ef7bb/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/Templates/TUniquePtr\"\u003eTUniquePtr\u003c/a\u003e\u003c \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/Buoyancy/FBuoyancySettings\"\u003eFBuoyancySettings\u003c/a\u003e \u003e\u003c/td\u003e\n      \u003ctd\u003eBuoyancySettings\u003c/td\u003e\n      \u003ctd\u003eHere we use a unique ptr so that it is possible to provide an async input \u003cem\u003ewithout\u003c/em\u003e buoyancy settings (which may be eventually desirable when we eventually are passing lists of water bodies or water wave data).\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/956efdfe-9bd5-4443-a5fe-0aec519afe33/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/Misc/TOptional\"\u003eTOptional\u003c/a\u003e\u003c \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Engine/Engine/ENetMode\"\u003eENetMode\u003c/a\u003e \u003e\u003c/td\u003e\n      \u003ctd\u003eNetMode\u003c/td\u003e\n      \u003ctd\u003eSet when net mode changes - should be one time on initialization.\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/96ce762f-83e9-4252-895c-68ad876da187/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/Misc/TOptional\"\u003eTOptional\u003c/a\u003e\u003c \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/Buoyancy/FBuoyancyWaterSplineDataManager\"\u003eFBuoyancyWaterSplineDataManager\u003c/a\u003e * \u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/Buoyancy/FBuoyancySubsystemSimCallbackInp-/SplineData\"\u003eSplineData\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eIf this ptr is set, then we have a new spline data manager...\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eFunctions\u003c/h2\u003e\n\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/ecfcdcf4-58e9-4fd1-9319-59693199d6c4/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003evoid\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/Buoyancy/FBuoyancySubsystemSimCallbackInp-/Reset\"\u003eReset\u003c/a\u003e ()\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "Buoyancy Sim Callback",
+  "document_type": null,
+  "hash_id": "wzz25",
+  "id": 3748014,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "nbJlK",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/Buoyancy/FBuoyancySubsystemSimCallbackInp-",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "FBuoyancySubsystemSimCallbackInput",
+  "updated_at": "2024-11-13T02:01:08.760+00:00",
+  "views_count": 0
+}

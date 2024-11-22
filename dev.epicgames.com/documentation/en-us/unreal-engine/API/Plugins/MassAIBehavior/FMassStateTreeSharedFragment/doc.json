@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/MassAIBehavior\"\u003eMassAIBehavior\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eInheritance Hierarchy\u003c/h2\u003e\n\n\u003cul\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MassEntity/FMassConstSharedFragment\"\u003eFMassConstSharedFragment\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003eFMassStateTreeSharedFragment\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/MassAIBehavior\"\u003eMassAIBehavior\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/AI/MassAI/Source/MassAIBehavior/Public/MassStateTreeFragments.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"MassStateTreeFragments.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003eUSTRUCT \u0026#40;\u0026#41;  \nstruct FMassStateTreeSharedFragment : public FMassConstSharedFragment  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eVariables\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/7dccc6fa-ad09-46a4-ae3e-f9b8dace7919/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/794b9c35-8db3-47f1-bc83-0b01bd0ca8de/api_variable_meta.png\" alt=\"UProperty\" loading=\"lazy\" title=\"UProperty\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/Delegates/TObjectPtr\"\u003eTObjectPtr\u003c/a\u003e\u003c \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/StateTreeModule/UStateTree\"\u003eUStateTree\u003c/a\u003e \u003e\u003c/td\u003e\n      \u003ctd\u003eStateTree\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eConstructors\u003c/h2\u003e\n\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/4c024ea8-6424-42ee-9233-178d01ef8f57/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/MassAIBehavior/FMassStateTreeSharedFragment/__ctor\"\u003eFMassStateTreeSharedFragment\u003c/a\u003e ()\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "",
+  "document_type": null,
+  "hash_id": "PJJMW",
+  "id": 3399451,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "dPqoM",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/MassAIBehavior/FMassStateTreeSharedFragment",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "FMassStateTreeSharedFragment",
+  "updated_at": "2024-11-13T07:09:06.223+00:00",
+  "views_count": 1
+}

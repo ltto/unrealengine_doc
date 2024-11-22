@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/WorldPartitionHLODUtilities\"\u003eWorldPartitionHLODUtilities\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/WorldPartitionHLODUtilities/WorldPartition\"\u003eWorldPartition\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/WorldPartitionHLODUtilities/WorldPartition/HLOD\"\u003eHLOD\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/WorldPartitionHLODUtilities/WorldPartition/HLOD/Builders\"\u003eBuilders\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eInheritance Hierarchy\u003c/h2\u003e\n\n\u003cul\u003e\n  \u003cli\u003eUHLODBuilderSettings\u003c/li\u003e\n  \u003cli\u003eUHLODBuilderInstancingSettings\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/WorldPartitionHLODUtilities\"\u003eWorldPartitionHLODUtilities\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/Editor/WorldPartitionHLODUtilities/Source/Public/WorldPartition/HLOD/Builders/HLODBuilderInstancing.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"WorldPartition/HLOD/Builders/HLODBuilderInstancing.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003eUCLASS \u0026#40;Blueprintable, Config\u0026#61;Engine, PerObjectConfig\u0026#41;  \nclass UHLODBuilderInstancingSettings : public UHLODBuilderSettings  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eVariables\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/0ad6ea64-a03d-48a5-bf4a-d016eeb2f66b/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/c36448ab-dae7-4b3e-827c-9012de14d385/api_variable_meta.png\" alt=\"UProperty\" loading=\"lazy\" title=\"UProperty\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/1808cc30-c467-44ad-8728-afdf84892e10/api_variable_meta_editor.png\" alt=\"Category, EditAnywhere, AdvancedDisplay\" loading=\"lazy\" title=\"Category, EditAnywhere, AdvancedDisplay\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/ba301bc7-b5f3-4f75-8590-97d30e931e62/api_variable_meta_blueprint.png\" alt=\"BlueprintReadWrite\" loading=\"lazy\" title=\"BlueprintReadWrite\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003ebool\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/WorldPartitionHLODUtilities/WorldPartition/HLOD/Builders/UHLODBuilderInst-_1/bDisallowNanite\"\u003ebDisallowNanite\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eIf enabled, the components created for the HLODs will not use Nanite.\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eConstructors\u003c/h2\u003e\n\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/93357d2a-67f3-4dc2-8ee8-00fbca98d8da/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/WorldPartitionHLODUtilities/WorldPartition/HLOD/Builders/UHLODBuilderInst-_1/__ctor\"\u003eUHLODBuilderInstancingSettings\u003c/a\u003e\n (\nconst FObjectInitializer\u0026 ObjectInitializer\u003cbr\u003e\n )\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eFunctions\u003c/h2\u003e\n\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/9ff04c63-5d44-4e80-903c-19cbc2bb5e19/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/7386d659-50f3-4f63-9e04-097d3d5f989d/api_function_virtual.png\" alt=\"Virtual\" loading=\"lazy\" title=\"Virtual\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/e10c17d5-44ca-435f-8922-dcf5479cbdf2/api_function_const.png\" alt=\"Const\" loading=\"lazy\" title=\"Const\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/TraceLog/uint32\"\u003euint32\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/WorldPartitionHLODUtilities/WorldPartition/HLOD/Builders/UHLODBuilderInst-_1/GetCRC\"\u003eGetCRC\u003c/a\u003e ()\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "",
+  "document_type": null,
+  "hash_id": "oo4o8",
+  "id": 3500169,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "51GV2",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/WorldPartitionHLODUtilities/WorldPartition/HLOD/Builders/UHLODBuilderInst-_1",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "UHLODBuilderInstancingSettings",
+  "updated_at": "2024-11-13T14:09:41.321+00:00",
+  "views_count": 0
+}

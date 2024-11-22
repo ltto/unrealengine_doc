@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/PlainProps\"\u003ePlainProps\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eInheritance Hierarchy\u003c/h2\u003e\n\n\u003cul\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/PlainProps/ILeafRangeBinding\"\u003eILeafRangeBinding\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003eFStringBinding\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/PlainProps\"\u003ePlainProps\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/Experimental/PlainProps/Source/Public/PlainPropsUeCoreBindings.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"PlainPropsUeCoreBindings.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003estruct FStringBinding : public PlainProps::ILeafRangeBinding  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eOverridden from ILeafRangeBinding\u003c/h2\u003e\n\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/916db365-fb9d-494c-957d-13c4113ab03c/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/0aa3e239-9bda-4742-92db-54340ed3996e/api_function_virtual.png\" alt=\"Virtual\" loading=\"lazy\" title=\"Virtual\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/b857c77d-87a5-48e1-8b1b-0454c55eba4b/api_function_const.png\" alt=\"Const\" loading=\"lazy\" title=\"Const\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/HAL/int64\"\u003eint64\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/PlainProps/FStringBinding/DiffLeaves\"\u003eDiffLeaves\u003c/a\u003e\n (\nconst void* RangeA,\u003cbr\u003e\nconst void* RangeB\u003cbr\u003e\n )\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/ac0f56b1-62fd-47f3-84d4-2fb003d07211/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/df814660-561c-4157-9716-7a57234fda23/api_function_virtual.png\" alt=\"Virtual\" loading=\"lazy\" title=\"Virtual\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/ae35b003-5582-46ab-8151-af4fe2744447/api_function_const.png\" alt=\"Const\" loading=\"lazy\" title=\"Const\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003evoid\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/PlainProps/FStringBinding/LoadLeaves\"\u003eLoadLeaves\u003c/a\u003e\n (\nvoid* Range,\u003cbr\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/PlainProps/FLeafRangeLoadView\"\u003eFLeafRangeLoadView\u003c/a\u003e Items\u003cbr\u003e\n )\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/51106404-3c08-4456-b849-82466dd81da3/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/6a273baa-4915-4ecf-8e16-9569b7f8bd0a/api_function_virtual.png\" alt=\"Virtual\" loading=\"lazy\" title=\"Virtual\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/882da4b3-fec5-4778-bd3d-14f5e9758878/api_function_const.png\" alt=\"Const\" loading=\"lazy\" title=\"Const\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003evoid\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/PlainProps/FStringBinding/SaveLeaves\"\u003eSaveLeaves\u003c/a\u003e\n (\nconst void* Range,\u003cbr\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/PlainProps/FLeafRangeAllocator\"\u003eFLeafRangeAllocator\u003c/a\u003e\u0026 Out\u003cbr\u003e\n )\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eTypedefs\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/PlainProps/FStringBinding/ItemType\"\u003eItemType\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/PlainProps/FStringBinding/SizeType\"\u003eSizeType\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "",
+  "document_type": null,
+  "hash_id": "dKKbkw",
+  "id": 3849381,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "9AAA2E",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/PlainProps/FStringBinding",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "FStringBinding",
+  "updated_at": "2024-11-13T11:34:18.326+00:00",
+  "views_count": 0
+}

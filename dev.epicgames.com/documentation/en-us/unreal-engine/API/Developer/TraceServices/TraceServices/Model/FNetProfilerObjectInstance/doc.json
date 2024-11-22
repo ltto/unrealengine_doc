@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Developer\"\u003eDeveloper\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Developer/TraceServices\"\u003eTraceServices\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Developer/TraceServices/TraceServices\"\u003eTraceServices\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Developer/TraceServices/TraceServices/Model\"\u003eModel\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Developer/TraceServices\"\u003eTraceServices\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Source/Developer/TraceServices/Public/TraceServices/Model/NetProfiler.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"TraceServices/Model/NetProfiler.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003estruct FNetProfilerObjectInstance  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003eConst TCHAR* Name; uint32 ProtocolIndex; uint64 ProtocolIdentifier;\u003c/p\u003e\n\n\u003ch2\u003eVariables\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/85b1eeb4-051b-43a0-920f-60d146b0b08d/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003eunion \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Developer/TraceServices/TraceServices/Model/FNetProfilerObjectInstance\"\u003eTraceServices::FNetProfilerObjectInstance\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/813be0c0-4670-45f0-a610-c9618bc69673/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Developer/TraceServices/TraceServices/Model/FNetProfilerLifeTime\"\u003eFNetProfilerLifeTime\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eLifeTime\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/381ab495-5f0e-47c6-beb0-3b9903c355dc/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/HAL/uint16\"\u003euint16\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eNameIndex\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/8530b9a5-cd53-45f8-84d3-5bc3239d1ae7/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/HAL/uint32\"\u003euint32\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eNetId\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/513b9e86-4a80-48bc-9d39-ce6cdeb1ee91/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/HAL/uint64\"\u003euint64\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eNetObjectId\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/f8ff15bd-6cbf-4fb2-a9e7-f3d5037b0c6c/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/HAL/uint32\"\u003euint32\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eObjectIndex\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/09a63c83-377c-41d4-bd4f-30f510c8cff0/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/HAL/uint64\"\u003euint64\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eTypeId\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "Struct FNetProfilerProtocol",
+  "document_type": null,
+  "hash_id": "6NvvM",
+  "id": 3288491,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "0KJ1Q",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Developer/TraceServices/TraceServices/Model/FNetProfilerObjectInstance",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "FNetProfilerObjectInstance",
+  "updated_at": "2024-11-12T22:41:17.667+00:00",
+  "views_count": 0
+}

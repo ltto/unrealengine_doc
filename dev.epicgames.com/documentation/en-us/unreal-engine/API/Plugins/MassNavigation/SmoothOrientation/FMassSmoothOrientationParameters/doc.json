@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/MassNavigation\"\u003eMassNavigation\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/MassNavigation/SmoothOrientation\"\u003eSmoothOrientation\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eInheritance Hierarchy\u003c/h2\u003e\n\n\u003cul\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MassEntity/FMassConstSharedFragment\"\u003eFMassConstSharedFragment\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003eFMassSmoothOrientationParameters\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/MassNavigation\"\u003eMassNavigation\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/AI/MassAI/Source/MassNavigation/Public/SmoothOrientation/MassSmoothOrientationFragments.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"SmoothOrientation/MassSmoothOrientationFragments.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003eUSTRUCT \u0026#40;\u0026#41;  \nstruct FMassSmoothOrientationParameters : public FMassConstSharedFragment  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eVariables\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/7f704f66-5b85-4247-a147-c5fc83a8ad54/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/6ed83bcc-d2c0-4fd4-83d4-1b63b674b5c9/api_variable_meta.png\" alt=\"UProperty\" loading=\"lazy\" title=\"UProperty\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/ef861e64-1d2a-45e2-99c8-167da4185947/api_variable_meta_editor.png\" alt=\"Category, EditAnywhere, Meta\" loading=\"lazy\" title=\"Category, EditAnywhere, Meta\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003efloat\u003c/td\u003e\n      \u003ctd\u003eEndOfPathDuration\u003c/td\u003e\n      \u003ctd\u003eThe time it takes the orientation to catchup to the requested orientation.\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/0ff3a8cd-6cf2-496c-9842-85cb30b1ce9a/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/5994a542-be42-47af-94ed-80e24c7c9d71/api_variable_meta.png\" alt=\"UProperty\" loading=\"lazy\" title=\"UProperty\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/82c7e9a8-aefb-4e4e-8c39-17b4d3a26425/api_variable_meta_editor.png\" alt=\"Category, EditAnywhere\" loading=\"lazy\" title=\"Category, EditAnywhere\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/MassNavigation/SmoothOrientation/FMassSmoothOrientationWeights\"\u003eFMassSmoothOrientationWeights\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eMoving\u003c/td\u003e\n      \u003ctd\u003eOrientation blending weights while moving.\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/a1f74ede-a584-4d49-8c7a-5fccb6153a7d/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/07894699-2bd4-4b7d-bd7f-3aa8f02f8027/api_variable_meta.png\" alt=\"UProperty\" loading=\"lazy\" title=\"UProperty\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/e2654d03-1a61-4bc4-b54c-7db382d640b2/api_variable_meta_editor.png\" alt=\"Category, EditAnywhere, Meta\" loading=\"lazy\" title=\"Category, EditAnywhere, Meta\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003efloat\u003c/td\u003e\n      \u003ctd\u003eOrientationSmoothingTime\u003c/td\u003e\n      \u003ctd\u003eThe time it takes the orientation to catchup to the requested orientation.\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/1b048b91-86a9-4278-a64b-01dd9d245cd4/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/MassNavigation/SmoothOrientation/FMassSmoothOrientationWeights\"\u003eFMassSmoothOrientationWeights\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eStanding\u003c/td\u003e\n      \u003ctd\u003eOrientation blending weights while standing.\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "",
+  "document_type": null,
+  "hash_id": "603WJ",
+  "id": 3401603,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "Lq6zn",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/MassNavigation/SmoothOrientation/FMassSmoothOrientationParameters",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "FMassSmoothOrientationParameters",
+  "updated_at": "2024-11-13T07:14:10.100+00:00",
+  "views_count": 0
+}

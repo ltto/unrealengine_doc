@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime\"\u003eRuntime\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MovieSceneTracks\"\u003eMovieSceneTracks\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MovieSceneTracks/Tracks\"\u003eTracks\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MovieSceneTracks\"\u003eMovieSceneTracks\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Source/Runtime/MovieSceneTracks/Public/Tracks/IMovieSceneTransformOrigin.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"Tracks/IMovieSceneTransformOrigin.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003eclass IMovieSceneTransformOrigin  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003eInterface that should be implemented to provide transform tracks with an origin transform. Scale is ignored.\u003c/p\u003e\n\n\u003ch2\u003eFunctions\u003c/h2\u003e\n\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/b3ebfa1b-4796-43ce-9099-57626539a5c8/api_function_protected.png\" alt=\"Protected function\" loading=\"lazy\" title=\"Protected function\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/8f97086c-8aa4-4d4d-a6e4-d3b5e67f2bf9/api_function_const.png\" alt=\"Const\" loading=\"lazy\" title=\"Const\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/db943f2e-28af-48d5-a645-9772b6b26739/api_function_meta.png\" alt=\"UFunction\" loading=\"lazy\" title=\"UFunction\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/172f27ef-4be7-475f-b606-b6f75df414c8/api_function_meta_blueprint.png\" alt=\"BlueprintCallable, Category, Meta, BlueprintImplementableEvent\" loading=\"lazy\" title=\"BlueprintCallable, Category, Meta, BlueprintImplementableEvent\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/6f07cd65-1005-4175-b6d5-0c6101f6205c/api_function_meta_other.png\" alt=\"displayname\" loading=\"lazy\" title=\"displayname\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003eFTransform\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MovieSceneTracks/Tracks/IMovieSceneTransformOrigin/BP_GetTransformO-\"\u003eBP_GetTransformOrigin\u003c/a\u003e ()\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003eGet the transform from which all absolute component transform sections should be relative.\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/5765a84a-900e-41ae-a67c-6c12f1cd25c1/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/85e94db7-f476-4303-a02f-23e5f4e52ca4/api_function_const.png\" alt=\"Const\" loading=\"lazy\" title=\"Const\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003eFTransform\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MovieSceneTracks/Tracks/IMovieSceneTransformOrigin/GetTransformOrigin\"\u003eGetTransformOrigin\u003c/a\u003e ()\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003eGet the transform origin for this interface\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/bae0749b-35a3-4086-92b9-c78441c27ef5/api_function_protected.png\" alt=\"Protected function\" loading=\"lazy\" title=\"Protected function\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/f78dcf69-ce87-466c-bc3b-3efe70c908f4/api_function_virtual.png\" alt=\"Virtual\" loading=\"lazy\" title=\"Virtual\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/0ae1ef18-7dfb-4b18-8170-73ad5e656309/api_function_const.png\" alt=\"Const\" loading=\"lazy\" title=\"Const\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/e6055390-9f2a-497b-94cb-698d5c57638a/api_function_meta.png\" alt=\"UFunction\" loading=\"lazy\" title=\"UFunction\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/9c0495cf-4a1c-4ec6-9718-4d28bfdf96a0/api_function_meta_blueprint.png\" alt=\"BlueprintCallable, Category, Meta, BlueprintImplementableEvent\" loading=\"lazy\" title=\"BlueprintCallable, Category, Meta, BlueprintImplementableEvent\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/860ad49f-ea46-4638-999b-a01e8541bccf/api_function_meta_other.png\" alt=\"displayname\" loading=\"lazy\" title=\"displayname\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003eFTransform\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MovieSceneTracks/Tracks/IMovieSceneTransformOrigin/NativeGetTransfo-\"\u003eNativeGetTransformOrigin\u003c/a\u003e ()\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "Interface that should be implemented to provide transform tracks with an origin transform.",
+  "document_type": null,
+  "hash_id": "q40em",
+  "id": 3665543,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "WOAxk",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Runtime/MovieSceneTracks/Tracks/IMovieSceneTransformOrigin",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "IMovieSceneTransformOrigin",
+  "updated_at": "2024-11-14T01:13:28.554+00:00",
+  "views_count": 1
+}

@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/TakeTrackRecorders\"\u003eTakeTrackRecorders\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/TakeTrackRecorders/TrackRecorders\"\u003eTrackRecorders\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/TakeTrackRecorders\"\u003eTakeTrackRecorders\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/VirtualProduction/Takes/Source/TakeTrackRecorders/Public/TrackRecorders/IMovieSceneTrackRecorderHost.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"TrackRecorders/IMovieSceneTrackRecorderHost.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003eUSTRUCT \u0026#40;\u0026#41;  \nstruct FTakeRecorderTrackSettings  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eVariables\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/5e702eaf-9bc4-461c-87b3-c5c422172be5/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/a858c68d-4a0f-413b-8fb2-5d4c2712a7af/api_variable_meta.png\" alt=\"UProperty\" loading=\"lazy\" title=\"UProperty\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/a8393562-7c49-4a36-87c3-80c61a33a9e3/api_variable_meta_editor.png\" alt=\"Category, EditAnywhere\" loading=\"lazy\" title=\"Category, EditAnywhere\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/7ed65548-d4de-4241-b114-2d48375bc8fe/api_variable_meta_serialization.png\" alt=\"Config\" loading=\"lazy\" title=\"Config\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/TraceLog/TArray\"\u003eTArray\u003c/a\u003e\u003c \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/TakeTrackRecorders/TrackRecorders/FTakeRecorderPropertyTrackSettin-\"\u003eFTakeRecorderPropertyTrackSettings\u003c/a\u003e \u003e\u003c/td\u003e\n      \u003ctd\u003eDefaultPropertyTracks\u003c/td\u003e\n      \u003ctd\u003eList of property names for which movie scene tracks will be created automatically.\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/9a901ca4-2e07-442b-81bc-280491550cef/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/cafe2bcc-f768-4099-9b1b-5af9ba4630ed/api_variable_meta.png\" alt=\"UProperty\" loading=\"lazy\" title=\"UProperty\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/34d429f2-f8b0-42e0-b38f-9b322d54c468/api_variable_meta_editor.png\" alt=\"Category, EditAnywhere\" loading=\"lazy\" title=\"Category, EditAnywhere\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/b0042b3d-9255-4975-8352-73f09819f29e/api_variable_meta_serialization.png\" alt=\"Config\" loading=\"lazy\" title=\"Config\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/TraceLog/TArray\"\u003eTArray\u003c/a\u003e\u003c \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/TakeTrackRecorders/TrackRecorders/FTakeRecorderPropertyTrackSettin-\"\u003eFTakeRecorderPropertyTrackSettings\u003c/a\u003e \u003e\u003c/td\u003e\n      \u003ctd\u003eExcludePropertyTracks\u003c/td\u003e\n      \u003ctd\u003eList of property names for which movie scene tracks will NOT be created automatically.\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/2607819a-7600-4459-bc4e-35d79634f5e6/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/b82229f8-bc5c-46c6-b069-b3771da31fba/api_variable_meta.png\" alt=\"UProperty\" loading=\"lazy\" title=\"UProperty\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/b6458642-bfe8-4b37-8955-ac23de460568/api_variable_meta_editor.png\" alt=\"Category, EditAnywhere, Meta\" loading=\"lazy\" title=\"Category, EditAnywhere, Meta\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/88798ab3-7520-4d51-8743-a4ac5201aedf/api_variable_meta_serialization.png\" alt=\"Config\" loading=\"lazy\" title=\"Config\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003eFSoftClassPath\u003c/td\u003e\n      \u003ctd\u003eMatchingActorClass\u003c/td\u003e\n      \u003ctd\u003eThe Actor class to create movie scene tracks for.\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "",
+  "document_type": null,
+  "hash_id": "m1vAa",
+  "id": 3490259,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "Lg3PY",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/TakeTrackRecorders/TrackRecorders/FTakeRecorderTrackSettings",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "FTakeRecorderTrackSettings",
+  "updated_at": "2024-11-13T13:18:54.443+00:00",
+  "views_count": 0
+}

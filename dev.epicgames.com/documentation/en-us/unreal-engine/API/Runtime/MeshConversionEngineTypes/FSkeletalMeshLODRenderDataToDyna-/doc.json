@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime\"\u003eRuntime\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MeshConversionEngineTypes\"\u003eMeshConversionEngineTypes\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MeshConversionEngineTypes\"\u003eMeshConversionEngineTypes\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Source/Runtime/MeshConversionEngineTypes/Public/SkeletalMeshLODRenderDataToDynamicMesh.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"SkeletalMeshLODRenderDataToDynamicMesh.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003eclass FSkeletalMeshLODRenderDataToDynamicMesh  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MeshConversionEngineTypes/FSkeletalMeshLODRenderDataToDyna-\"\u003eFSkeletalMeshLODRenderDataToDynamicMesh\u003c/a\u003e can be used to create a FDynamicMesh3 from a FSkeletalMeshLODRenderData, which is the variant of the mesh in a SkeletalMesh Asset used for rendering (and which is available at runtime). The FSkeletalMeshLODRenderData has vertices duplicated at any split UV/normal/tangent/color, ie in the overlays there will be a unique overlay element for each base mesh vertex.\u003c/p\u003e\n\n\u003cp\u003eTODO: The code mainly follows the logic of the StaticMeshLODResourcesToDynamicMesh.h with the addition of the skinning weights and bones. Both should be refactored to use ToDynamicMesh interface instead.\u003c/p\u003e\n\n\u003ch2\u003eFunctions\u003c/h2\u003e\n\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/a22a1ca1-d3c9-4b43-a104-e427dd96f32e/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/15dbcb2c-f3e2-4670-b09e-f955dceb4d09/api_function_static.png\" alt=\"Static\" loading=\"lazy\" title=\"Static\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003ebool\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MeshConversionEngineTypes/FSkeletalMeshLODRenderDataToDyna-/Convert/1\"\u003eConvert\u003c/a\u003e\n (\nconst FSkeletalMeshLODRenderData* SkeletalMeshResources,\u003cbr\u003e\nconst FReferenceSkeleton\u0026 RefSkeleton,\u003cbr\u003e\nconst \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MeshConversionEngineTypes/FSkeletalMeshLODRenderDataToDyna-/ConversionOption-\"\u003eConversionOptions\u003c/a\u003e\u0026 Options,\u003cbr\u003e\nFDynamicMesh3\u0026 OutputMesh\u003cbr\u003e\n )\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/a9027ec8-2225-4dfe-8590-53b1629a7e41/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/8283915f-1134-428e-96cb-46263565cb79/api_function_static.png\" alt=\"Static\" loading=\"lazy\" title=\"Static\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003ebool\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MeshConversionEngineTypes/FSkeletalMeshLODRenderDataToDyna-/Convert/2\"\u003eConvert\u003c/a\u003e\n (\nconst FSkeletalMeshLODRenderData* SkeletalMeshResources,\u003cbr\u003e\nconst FReferenceSkeleton\u0026 RefSkeleton,\u003cbr\u003e\nconst \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MeshConversionEngineTypes/FSkeletalMeshLODRenderDataToDyna-/ConversionOption-\"\u003eConversionOptions\u003c/a\u003e\u0026 Options,\u003cbr\u003e\nFDynamicMesh3\u0026 OutputMesh,\u003cbr\u003e\nbool bHasVertexColors,\u003cbr\u003e\nTFunctionRef\u003c FColor(int32)\u003e GetVertexColorFromLODVertexIndex\u003cbr\u003e\n )\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eClasses\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/c67eb7af-e976-4c62-af3b-52a37007edad/api_struct_public.png\" alt=\"Public struct\" loading=\"lazy\" title=\"Public struct\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MeshConversionEngineTypes/FSkeletalMeshLODRenderDataToDyna-/ConversionOption-\"\u003eConversionOptions\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eTODO: more options?\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "[FSkeletalMeshLODRenderDataToDynamicMesh](API\\Runtime\\MeshConversionEngineTypes\\FSkeletalMeshLODRenderDataToDyna-) can be used to create a FDynamicMesh3 from a FSkeletalMeshLODRenderData, which is the variant of the mesh in a SkeletalMesh Asset used for rendering (and which is available at runtime).",
+  "document_type": null,
+  "hash_id": "yBBAvg",
+  "id": 3903328,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "q00Pe8",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Runtime/MeshConversionEngineTypes/FSkeletalMeshLODRenderDataToDyna-",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "FSkeletalMeshLODRenderDataToDynamicMesh",
+  "updated_at": "2024-11-14T00:33:07.225+00:00",
+  "views_count": 1
+}

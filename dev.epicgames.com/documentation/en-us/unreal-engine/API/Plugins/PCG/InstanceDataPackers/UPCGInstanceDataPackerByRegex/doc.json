@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/PCG\"\u003ePCG\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/PCG/InstanceDataPackers\"\u003eInstanceDataPackers\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eInheritance Hierarchy\u003c/h2\u003e\n\n\u003cul\u003e\n  \u003cli\u003eUObject\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/PCG/InstanceDataPackers/UPCGInstanceDataPackerBase\"\u003eUPCGInstanceDataPackerBase\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003eUPCGInstanceDataPackerByRegex\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/PCG\"\u003ePCG\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/PCG/Source/PCG/Public/InstanceDataPackers/PCGInstanceDataPackerByRegex.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"InstanceDataPackers/PCGInstanceDataPackerByRegex.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003eUCLASS \u0026#40;MinimalAPI, BlueprintType, ClassGroup\u0026#61;\u0026#40;Procedural\u0026#41;\u0026#41;  \nclass UPCGInstanceDataPackerByRegex : public UPCGInstanceDataPackerBase  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eVariables\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/9962a0ec-16c8-4245-a661-e2c5ef996953/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/4fd6a251-09f8-4574-8f5a-392c173a549e/api_variable_meta.png\" alt=\"UProperty\" loading=\"lazy\" title=\"UProperty\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/99286790-a8ec-4e24-97a1-1cc3e7d711dd/api_variable_meta_editor.png\" alt=\"Category, EditAnywhere\" loading=\"lazy\" title=\"Category, EditAnywhere\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/e94377fd-7d17-4e98-9fa2-859cada57c56/api_variable_meta_blueprint.png\" alt=\"BlueprintReadWrite\" loading=\"lazy\" title=\"BlueprintReadWrite\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/TraceLog/TArray\"\u003eTArray\u003c/a\u003e\u003c \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/TraceLog/FString\"\u003eFString\u003c/a\u003e \u003e\u003c/td\u003e\n      \u003ctd\u003eRegexPatterns\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eFunctions\u003c/h2\u003e\n\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/436a78d5-3087-444e-88de-e2e25c4d6737/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/3a379875-27ee-4845-b640-99b3f327963f/api_function_virtual.png\" alt=\"Virtual\" loading=\"lazy\" title=\"Virtual\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/fcf9c5f7-11bc-4d15-ba62-b545c9ffc545/api_function_const.png\" alt=\"Const\" loading=\"lazy\" title=\"Const\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003evoid\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/PCG/InstanceDataPackers/UPCGInstanceDataPackerByRegex/PackInstances_Im-\"\u003ePackInstances_Implementation\u003c/a\u003e\n (\nUPARAM(ref) \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/PCG/FPCGContext\"\u003eFPCGContext\u003c/a\u003e\u0026 Context,\u003cbr\u003e\nconst \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/PCG/Data/UPCGSpatialData\"\u003eUPCGSpatialData\u003c/a\u003e* InSpatialData,\u003cbr\u003e\nUPARAM(ref) const \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/PCG/MeshSelectors/FPCGMeshInstanceList\"\u003eFPCGMeshInstanceList\u003c/a\u003e\u0026 InstanceList,\u003cbr\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/PCG/InstanceDataPackers/FPCGPackedCustomData\"\u003eFPCGPackedCustomData\u003c/a\u003e\u0026 OutPackedCustomData\u003cbr\u003e\n )\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "",
+  "document_type": null,
+  "hash_id": "2lyaK",
+  "id": 3464870,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "p8V5p",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/PCG/InstanceDataPackers/UPCGInstanceDataPackerByRegex",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "UPCGInstanceDataPackerByRegex",
+  "updated_at": "2024-11-13T11:14:11.697+00:00",
+  "views_count": 0
+}

@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNext\"\u003eAnimNext\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNext/TraitCore\"\u003eTraitCore\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNext\"\u003eAnimNext\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/Experimental/AnimNext/Source/AnimNext/Public/TraitCore/Trait.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"TraitCore/Trait.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003estruct FTraitMemoryLayout  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNext/TraitCore/FTraitMemoryLayout\"\u003eFTraitMemoryLayout\u003c/a\u003e\u003c/p\u003e\n\n\u003cp\u003eEncapsulates size/alignment details for a trait.\u003c/p\u003e\n\n\u003ch2\u003eVariables\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/8b53d5ea-c6a4-47c5-a47f-12718501d884/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/HAL/uint32\"\u003euint32\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eInstanceDataAlignment\u003c/td\u003e\n      \u003ctd\u003eThe alignment in bytes of the instance data for the trait which derives from \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNext/TraitCore/FTraitInstanceData\"\u003eFTraitInstanceData\u003c/a\u003e.\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/bc7062e2-61c4-484a-a621-7c0a923024fa/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/HAL/uint32\"\u003euint32\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eInstanceDataSize\u003c/td\u003e\n      \u003ctd\u003eThe size in bytes of the instance data for the trait which derives from \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNext/TraitCore/FTraitInstanceData\"\u003eFTraitInstanceData\u003c/a\u003e.\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/59cb46fa-f339-4a62-a17e-fe7c3e0cf839/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/HAL/uint32\"\u003euint32\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eSharedDataAlignment\u003c/td\u003e\n      \u003ctd\u003eThe alignment in bytes of the shared data for the trait which derives from \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNext/TraitCore/FAnimNextTraitSharedData\"\u003eFAnimNextTraitSharedData\u003c/a\u003e.\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/4f18f4dd-a4f6-46da-bc1e-dba3ce13fffb/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/HAL/uint32\"\u003euint32\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eSharedDataSize\u003c/td\u003e\n      \u003ctd\u003eThe size in bytes of the shared data for the trait which derives from \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNext/TraitCore/FAnimNextTraitSharedData\"\u003eFAnimNextTraitSharedData\u003c/a\u003e.\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/f3a918d5-d399-4748-ac85-d939e44ca661/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/HAL/uint32\"\u003euint32\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eTraitAlignment\u003c/td\u003e\n      \u003ctd\u003eThe alignment in bytes of an instance of the trait class which derives from \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNext/TraitCore/FTrait\"\u003eFTrait\u003c/a\u003e.\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/e0b5eb4c-80a6-4bf1-9b1e-ebf738f73b79/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/HAL/uint32\"\u003euint32\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eTraitSize\u003c/td\u003e\n      \u003ctd\u003eThe size in bytes of an instance of the trait class which derives from \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNext/TraitCore/FTrait\"\u003eFTrait\u003c/a\u003e.\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "[FTraitMemoryLayout](API\\Plugins\\AnimNext\\TraitCore\\FTraitMemoryLayout)",
+  "document_type": null,
+  "hash_id": "1MmYX",
+  "id": 3736745,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "WGwnG",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/AnimNext/TraitCore/FTraitMemoryLayout",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "FTraitMemoryLayout",
+  "updated_at": "2024-11-13T01:15:16.178+00:00",
+  "views_count": 0
+}

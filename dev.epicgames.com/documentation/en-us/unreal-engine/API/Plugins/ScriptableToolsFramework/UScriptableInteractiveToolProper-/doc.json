@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/ScriptableToolsFramework\"\u003eScriptableToolsFramework\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eInheritance Hierarchy\u003c/h2\u003e\n\n\u003cul\u003e\n  \u003cli\u003eUObject\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/InteractiveToolsFramework/FWatchablePropertySet\"\u003eFWatchablePropertySet\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/InteractiveToolsFramework/UInteractiveToolPropertySet\"\u003eUInteractiveToolPropertySet\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003eUScriptableInteractiveToolPropertySet\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/EditorScriptableToolsFramework/UEditorScriptabl-\"\u003eUEditorScriptableInteractiveToolPropertySet\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/ScriptableToolsFramework\"\u003eScriptableToolsFramework\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/Runtime/ScriptableToolsFramework/Source/ScriptableToolsFramework/Public/ScriptableInteractiveTool.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"ScriptableInteractiveTool.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003eUCLASS \u0026#40;Transient, Blueprintable\u0026#41;  \nclass UScriptableInteractiveToolPropertySet : public UInteractiveToolPropertySet  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/ScriptableToolsFramework/UScriptableInteractiveToolProper-\"\u003eUScriptableInteractiveToolPropertySet\u003c/a\u003e is a Blueprintable extension of \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/InteractiveToolsFramework/UInteractiveToolPropertySet\"\u003eUInteractiveToolPropertySet\u003c/a\u003e. This is a helper type meant to be used with \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/ScriptableToolsFramework/UScriptableInteractiveTool\"\u003eUScriptableInteractiveTool\u003c/a\u003e. The intention is that the \"Settings\" of a particular Tool are stored in \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/ScriptableToolsFramework/UScriptableInteractiveToolProper-\"\u003eUScriptableInteractiveToolPropertySet\u003c/a\u003e (\"Property Set\") instances. The function UScriptableInteractiveTool::AddPropertySetOfType can be used to create and attach a new Property Set. Then these settings can be automatically exposed by, for example, the Editor Mode UI, similar to (eg) Modeling Mode in the UE Editor.\u003c/p\u003e\n\n\u003cp\u003eIn addition, \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/ScriptableToolsFramework/UScriptableInteractiveTool\"\u003eUScriptableInteractiveTool\u003c/a\u003e has a set of functions like WatchFloatProperty, WatchBoolProperty, etc, that can be used to detect and respond to changes in the Property Set. This works with both changes caused by Editor UI (eg a Details Panel) as well as done directly in Blueprints or even C++ code.\u003c/p\u003e\n\n\u003cp\u003eNote, however, that this Property Set mechanism completely optional, a Tool builder is free to use any method whatsoever to store/modify Tool settings.\u003c/p\u003e\n\n\u003ch2\u003eVariables\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/656f5e8d-c6ea-4bbe-8551-a48a9c0d3c12/api_variable_protected.png\" alt=\"Protected variable\" loading=\"lazy\" title=\"Protected variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/UObject/TWeakObjectPtr\"\u003eTWeakObjectPtr\u003c/a\u003e\u003c \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/ScriptableToolsFramework/UScriptableInteractiveTool\"\u003eUScriptableInteractiveTool\u003c/a\u003e \u003e\u003c/td\u003e\n      \u003ctd\u003eParentTool\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "[UScriptableInteractiveToolPropertySet](API\\Plugins\\ScriptableToolsFramework\\UScriptableInteractiveToolProper-) is a Blueprintable extension of [UInteractiveToolPropertySet](API\\Runtime\\InteractiveToolsFramework\\UInteractiveToolPropertySet).",
+  "document_type": null,
+  "hash_id": "G6aD1",
+  "id": 3483957,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "QL50q",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/ScriptableToolsFramework/UScriptableInteractiveToolProper-",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "UScriptableInteractiveToolPropertySet",
+  "updated_at": "2024-11-13T12:48:00.826+00:00",
+  "views_count": 0
+}

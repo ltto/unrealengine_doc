@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/RemoteControlCommon\"\u003eRemoteControlCommon\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/RemoteControlCommon\"\u003eRemoteControlCommon\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/VirtualProduction/RemoteControl/Source/RemoteControlCommon/Public/RCTypeTraits.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"RCTypeTraits.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003etemplate\u0026lt;typename ValueType, typename Enable\u0026gt;  \nstruct TRemoteControlTypeTraits  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003eVarious RemoteControl type traits\u003c/p\u003e\n\n\u003ch2\u003eSpecializations\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/RemoteControlCommon/TRemoteControlTypeTraits_bool\"\u003eTRemoteControlTypeTraits\u003c bool \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/RemoteControlCommon/TRemoteControlTypeTraits_FBox\"\u003eTRemoteControlTypeTraits\u003c FBox \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/RemoteControlCommon/TRemoteControlTypeTraits_FBox2D\"\u003eTRemoteControlTypeTraits\u003c FBox2D \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/RemoteControlCommon/TRemoteControlTypeTraits_FBoxSph-\"\u003eTRemoteControlTypeTraits\u003c FBoxSphereBounds \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/RemoteControlCommon/TRemoteControlTypeTraits_FColor\"\u003eTRemoteControlTypeTraits\u003c FColor \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/RemoteControlCommon/TRemoteControlTypeTraits_FIntPoi-\"\u003eTRemoteControlTypeTraits\u003c FIntPoint \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/RemoteControlCommon/TRemoteControlTypeTraits_FIntVec-\"\u003eTRemoteControlTypeTraits\u003c FIntVector \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/RemoteControlCommon/TRemoteControlTypeTraits_FLinear-\"\u003eTRemoteControlTypeTraits\u003c FLinearColor \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/RemoteControlCommon/TRemoteControlTypeTraits_FName\"\u003eTRemoteControlTypeTraits\u003c FName \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/RemoteControlCommon/TRemoteControlTypeTraits_FQuat\"\u003eTRemoteControlTypeTraits\u003c FQuat \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/RemoteControlCommon/TRemoteControlTypeTraits_FRotato-\"\u003eTRemoteControlTypeTraits\u003c FRotator \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/RemoteControlCommon/TRemoteControlTypeTraits_FString\"\u003eTRemoteControlTypeTraits\u003c FString \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/RemoteControlCommon/TRemoteControlTypeTraits_FText\"\u003eTRemoteControlTypeTraits\u003c FText \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/RemoteControlCommon/TRemoteControlTypeTraits_FTransf-\"\u003eTRemoteControlTypeTraits\u003c FTransform \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/RemoteControlCommon/TRemoteControlTypeTraits_FVector\"\u003eTRemoteControlTypeTraits\u003c FVector \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/RemoteControlCommon/TRemoteControlTypeTraits_FVector-\"\u003eTRemoteControlTypeTraits\u003c FVector2D \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/RemoteControlCommon/TRemoteControlTypeTraits_FVector-_1\"\u003eTRemoteControlTypeTraits\u003c FVector4 \u003e\u003c/a\u003e\u003c/p\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "Various RemoteControl type traits",
+  "document_type": null,
+  "hash_id": "qYVYe",
+  "id": 3471087,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "e91vm",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/RemoteControlCommon/TRemoteControlTypeTraits",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "TRemoteControlTypeTraits",
+  "updated_at": "2024-11-13T11:51:40.094+00:00",
+  "views_count": 0
+}

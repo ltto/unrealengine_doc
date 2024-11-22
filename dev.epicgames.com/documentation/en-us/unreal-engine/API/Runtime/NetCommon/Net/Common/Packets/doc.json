@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime\"\u003eRuntime\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/NetCommon\"\u003eNetCommon\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/NetCommon/Net\"\u003eNet\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/NetCommon/Net/Common\"\u003eCommon\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eClasses\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/a5d62dd1-ee51-4eb8-ae95-691460b55891/api_struct_public.png\" alt=\"Public struct\" loading=\"lazy\" title=\"Public struct\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/NetCommon/Net/Common/Packets/FInPacketTraits\"\u003eFInPacketTraits\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eContains metadata and flags, which provide information on the traits of a packet - what it contains and how to process it.\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/8e2089e0-1c01-446b-88cd-3cc7b984442d/api_struct_public.png\" alt=\"Public struct\" loading=\"lazy\" title=\"Public struct\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/NetCommon/Net/Common/Packets/FOutPacketTraits\"\u003eFOutPacketTraits\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eContains metadata and flags, which provide information on the traits of a packet - what it contains and how to process it.\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/72b94dbb-f612-48d3-93d1-6b8f13e29e99/api_struct_public.png\" alt=\"Public struct\" loading=\"lazy\" title=\"Public struct\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/NetCommon/Net/Common/Packets/FPacketBufferView\"\u003eFPacketBufferView\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eRepresents a view of a buffer for storing packets.\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/19ab0950-4800-4cc3-afe0-937159026a01/api_class_public.png\" alt=\"Public class\" loading=\"lazy\" title=\"Public class\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/NetCommon/Net/Common/Packets/FPacketDataView\"\u003eFPacketDataView\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eRepresent a restricted view of packet data, with bit-based size, allowing data to be reassigned to point elsewhere, but not allowing the data being pointed to, to be modified.\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/3d93180b-f499-4a2e-9e64-74d29bc33b3f/api_struct_public.png\" alt=\"Public struct\" loading=\"lazy\" title=\"Public struct\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/NetCommon/Net/Common/Packets/FPacketTimestamp\"\u003eFPacketTimestamp\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eStores a platform-specific timestamp for a packet.\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/5ba6a76b-fe81-45b5-a706-78ca579d5e11/api_struct_public.png\" alt=\"Public struct\" loading=\"lazy\" title=\"Public struct\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/NetCommon/Net/Common/Packets/FReceivedPacketView\"\u003eFReceivedPacketView\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eRepresents a view of a received packet, which may be modified to update Data it points to and Data size, as a packet is processed.\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eEnums\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/de89596c-a991-4e4d-b60c-44f5fa0bdcae/api_enum_public.png\" alt=\"Public enum\" loading=\"lazy\" title=\"Public enum\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/NetCommon/Net/Common/Packets/ECountUnits__BitType\"\u003eECountUnits::BitType\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/57996dc6-561b-448c-a0c5-a1a7598aa86c/api_enum_public.png\" alt=\"Public enum\" loading=\"lazy\" title=\"Public enum\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/NetCommon/Net/Common/Packets/ECountUnits__ByteType\"\u003eECountUnits::ByteType\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "",
+  "document_type": null,
+  "hash_id": "PBKgk",
+  "id": 3668107,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "E6anl",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Runtime/NetCommon/Net/Common/Packets",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "Packets",
+  "updated_at": "2024-11-14T01:25:36.190+00:00",
+  "views_count": 0
+}

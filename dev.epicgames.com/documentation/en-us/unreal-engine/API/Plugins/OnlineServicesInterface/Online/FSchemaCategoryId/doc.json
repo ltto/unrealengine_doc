@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/OnlineServicesInterface\"\u003eOnlineServicesInterface\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/OnlineServicesInterface/Online\"\u003eOnline\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eType\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003etypedef FName FSchemaCategoryId  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/OnlineServicesInterface\"\u003eOnlineServicesInterface\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/Online/OnlineServices/Source/OnlineServicesInterface/Public/Online/SchemaTypes.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"Online/SchemaTypes.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003eCategory within a schema. Most schema will have two sets of configuration - one for the singular object and one for member data within that object. The category name is expected to be built into the code which uses a schema and is not expected to change. A schema may not add any categories not already declared in the parent schema.\u003c/p\u003e\n\n\u003cp\u003eExample: A lobby contains both lobby data and lobby member data, but during lobby creation the client only specifies a single schema Id. The schema id is required to have categories for both Lobby and LobbyMember.\u003c/p\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "Category within a schema.",
+  "document_type": null,
+  "hash_id": "dDmon",
+  "id": 3452437,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "blkdK",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/OnlineServicesInterface/Online/FSchemaCategoryId",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "FSchemaCategoryId",
+  "updated_at": "2024-11-13T10:18:27.468+00:00",
+  "views_count": 0
+}

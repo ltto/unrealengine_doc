@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime\"\u003eRuntime\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/RenderCore\"\u003eRenderCore\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/RenderCore\"\u003eRenderCore\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Source/Runtime/RenderCore/Public/ShaderCompilerCore.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"ShaderCompilerCore.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003estruct FShaderPreprocessDependencies  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003eStructure that provides an array of #include dependencies for a given root shader file, including not just immediate dependencies, but recursive dependencies from children as well. Not exhaustive, as it does not include platform specific or generated files, although it does include children of \"/Engine/Generated/Material.ush\", as derived from \"/Engine/Private/MaterialTemplate.ush\". Take the example of ClearUAV.usf:\u003c/p\u003e\n\n\u003cp\u003e/Engine/Private/Tools/ClearUAV.usf #include \"../Common.ush\" /Engine/Private/Common.ush #include \"/Engine/Public/Platform.ush\" #include \"PackUnpack.ush\" /Engine/Public/Platform.ush #include \"FP16Math.ush\"\u003c/p\u003e\n\n\u003cp\u003eThe above is a small subset, but the above (and many more) would all show up as elements in Dependencies:  PathInSource                   ParentPath                                ResultPath\u003c/p\u003e\n\u003chr /\u003e\n\u003cp\u003e../Common.ush                  /Engine/Private/Tools/ClearUAV.usf        /Engine/Private/Common.ush\n /Engine/Public/Platform.ush    /Engine/Private/Common.ush                /Engine/Public/Platform.ush\n PackUnpack.ush                 /Engine/Private/Common.ush                /Engine/Private/PackUnpack.ush\n FP16Math.ush                   /Engine/Public/Platform.ush               /Engine/Public/FP16Math.ush\u003c/p\u003e\n\n\u003cp\u003eThe goal of this structure is to allow a shader preprocessor implementation to fetch most of the source dependencies in a single query of the loaded shader cache, and then efficiently search for dependencies encountered in the shader source code, without needing to do string operations to resolve paths (such as converting relative paths like \"../Common.ush\" to \"/Engine/Private/Common.ush\"). Besides that, the array organization can be used to manage encountered source files by index, rather than needing a map, and the \"ResultPath\" strings from this structure can be referenced by pointer, rather than needing to dynamically allocate a copy of the resolved path. Lookups by PathInSource can use a much faster case sensitive hash, because PathInSource has verbatim capitalization from the source code files. Altogether, this utility structure saves a bunch of shader cache query, hash, map, string, and memory allocation overhead.\u003c/p\u003e\n\n\u003ch2\u003eVariables\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/f04c9bdb-ca23-4352-84b2-9b2aa4492af2/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/Containers/FHashTable\"\u003eFHashTable\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eByResult\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/e713e9e6-4876-43d3-a687-a3e2be9ae853/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/Containers/FHashTable\"\u003eFHashTable\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eBySource\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/95b58c28-0845-4a3d-b7f8-052e985bbb9a/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/TraceLog/TArray\"\u003eTArray\u003c/a\u003e\u003c \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/RenderCore/FShaderPreprocessDependency\"\u003eFShaderPreprocessDependency\u003c/a\u003e \u003e\u003c/td\u003e\n      \u003ctd\u003eDependencies\u003c/td\u003e\n      \u003ctd\u003eFirst item in array contains stripped source for root file, and is not in the hash tables.\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "Structure that provides an array of #include dependencies for a given root shader file, including not just immediate dependencies, but recursive dependencies from children as well.",
+  "document_type": null,
+  "hash_id": "1XXm4Q",
+  "id": 3908001,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "Qnn01g",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Runtime/RenderCore/FShaderPreprocessDependencies",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "FShaderPreprocessDependencies",
+  "updated_at": "2024-11-14T01:52:07.218+00:00",
+  "views_count": 0
+}

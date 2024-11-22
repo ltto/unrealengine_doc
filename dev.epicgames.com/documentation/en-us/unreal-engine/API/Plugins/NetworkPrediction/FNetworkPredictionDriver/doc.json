@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/NetworkPrediction\"\u003eNetworkPrediction\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eInheritance Hierarchy\u003c/h2\u003e\n\n\u003cul\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/NetworkPrediction/FNetworkPredictionDriverBase\"\u003eFNetworkPredictionDriverBase\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003eFNetworkPredictionDriver\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/NetworkPrediction\"\u003eNetworkPrediction\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/Runtime/NetworkPrediction/Source/NetworkPrediction/Public/NetworkPredictionDriver.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"NetworkPredictionDriver.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003etemplate\u0026lt;typename ModelDef\u0026gt;  \nstruct FNetworkPredictionDriver : public FNetworkPredictionDriverBase\u0026lt; ModelDef \u0026gt;  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003eThe \"driver\" represents the UE side of the NetworkPrediction System. Typically the driver will be an Unreal Actor or ActorComponent. This driver class is defined in the ModelDef (your version of \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/NetworkPrediction/FNetworkPredictionModelDef\"\u003eFNetworkPredictionModelDef\u003c/a\u003e). For example, AActor or AMyPawn class. While the Simulation class is agnostic to all of this, the driver is responsible for specifying exactly how things should work, generating input and handling output from the system.\u003c/p\u003e\n\n\u003cp\u003eIts worth pointing out that a new ModelDef with a new Driver class is only required when you want to actually change behavior at the driver level. For example, if you define a ModelDef {MySimulation, AMyPawn_Base} you can still use this ModelDef with both AMyPawn_Player, AMyPawn_AI. You would only need to create a ModelDef {MySimulation, AMyPawn_Player} if your player class wanted to customize Driver calls for example. (And even then: making the Driver functions virtual on AMyPawn_Base would be enough, at the cost of virtual function calls).\u003c/p\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/NetworkPrediction/FNetworkPredictionDriver\"\u003eFNetworkPredictionDriver\u003c/a\u003e is how calls to the driver are made. \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/NetworkPrediction/FNetworkPredictionDriverBase\"\u003eFNetworkPredictionDriverBase\u003c/a\u003e is a default implementation that will be used. You can customize any of these calls by specializing \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/NetworkPrediction/FNetworkPredictionDriver\"\u003eFNetworkPredictionDriver\u003c/a\u003e to your ModelDef type. If you do this, you should inherit from FNetworkPredictionDriverBase\u003cYourModelDef\u003e or FNetworkPredictionDriver\u003cParentModelDef\u003e if you are extending an existing ModelDef. (otherwise you will need to implement every required function yourself).\u003c/p\u003e\n\n\u003cp\u003eThe default implementations can be broken down into a few categories:\u003c/p\u003e\n\n\u003cp\u003eSimple stuff like \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/NetworkPrediction/FNetworkPredictionDriverBase/GetDebugString/1\"\u003eGetDebugString()\u003c/a\u003e - we provide generic implemenations for AActor and UActorComponent. In general you won't need to implement these yourself unless you want to include extra information in the debug string that the system prints to logs.\u003c/p\u003e\n\n\u003cp\u003eCalls that get forwarded to the Driver itself. For example ::InitializeSimulationState(FSyncState*, FAuxState*). We can't provide a generic implementation because the state type is defined by the user. We forward this to the Driver because that is ultimately where the initial simulation state is seeded from. Defining InitializeSimulationState on the Driver itself is the simplest way of doing this and will make the most sense to anyone looking at the Driver class.\u003c/p\u003e\n\n\u003cp\u003eHowever there may be cases when this is not an option. For example if you want to create a Simulation in this system that can be driven by an AActor. You wouldn't want to modify AActor itself to implement InitializeSimulationState. In those cases, you can specialize FNetworkPredictionDriver\u003cYourModelDef\u003e::InitializeSimulationState(AActor*, FSyncState*, FAuxState*) and implement it there.\u003c/p\u003e\n\n\u003cp\u003eCalls that get forwarded to the underlying StateTypes. For example ::ShouldReconcile(FSyncState*, FSyncState*). The default implementation for these calls will get forwarded to member functions on the state type itself. This allows the user struct to define the default behavior while still giving the Driver type the option to override.\u003c/p\u003e\n\n\u003cp\u003eHigh level goals: maximize non-intrusive extendability, shield users from templated boiler plate where possible.\u003c/p\u003e\n\n\u003ch2\u003eSpecializations\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/NetworkPrediction/FNetworkPredictionDriver_FGeneri-\"\u003eFNetworkPredictionDriver\u003c FGenericKinematicActorDef \u003e\u003c/a\u003e\u003c/p\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "This is the actual template to specialize when wanting to override functions.",
+  "document_type": null,
+  "hash_id": "XNbB0",
+  "id": 3427708,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "vQeJn",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/NetworkPrediction/FNetworkPredictionDriver",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "FNetworkPredictionDriver",
+  "updated_at": "2024-11-13T09:08:35.498+00:00",
+  "views_count": 0
+}

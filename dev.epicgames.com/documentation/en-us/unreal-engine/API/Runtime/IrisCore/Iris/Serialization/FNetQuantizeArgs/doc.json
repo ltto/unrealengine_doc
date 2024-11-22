@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime\"\u003eRuntime\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/IrisCore\"\u003eIrisCore\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/IrisCore/Iris\"\u003eIris\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/IrisCore/Iris/Serialization\"\u003eSerialization\u003c/a\u003e\u003c/p\u003e\n\n\u003cblock-callout callout-type=\"warning\"\u003e\n\u003cp\u003e\u003cstrong\u003eWarnings\u003c/strong\u003e\n    * Beware of padding in your quantized state as creating it on the stack for example may cause non-determinstic state.\u003c/p\u003e\n\u003c/block-callout\u003e\n\n\u003ch2\u003eInheritance Hierarchy\u003c/h2\u003e\n\n\u003cul\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/IrisCore/Iris/Serialization/FNetSerializerBaseArgs\"\u003eFNetSerializerBaseArgs\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003eFNetQuantizeArgs\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/IrisCore\"\u003eIrisCore\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Source/Runtime/Experimental/Iris/Core/Public/Iris/Serialization/NetSerializer.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"Iris/Serialization/NetSerializer.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003estruct FNetQuantizeArgs : public UE::Net::FNetSerializerBaseArgs  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003eParameters passed to a NetSerializer's Quantize function. The purpose of the Quantize function is to transform the original source data to a POD state. Quantized state buffers are passed to memcpy and similar functions. Apart from required to being POD it must also be bit deterministic. As state buffers are initialized to zero before first use a quantized state of zero should represent a valid state which the serializer's other functions can operate on. There is an option to allow dynamic state which can be used by serializers operating on container types to minimize the footprint of the quantized state, rather than always having a fixed buffer that can handle the maximum number of elements in the container for example. For dynamic state additional functions need to be implemented; CloneDynamicState and FreeDynamicState.\u003c/p\u003e\n\n\u003cp\u003eBeware of padding in your quantized state as creating it on the stack for example may cause non-determinstic state.\u003c/p\u003e\n\n\u003ch2\u003eVariables\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/6eeb9233-228e-4a27-a900-0a17f31484ea/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/IrisCore/Iris/Serialization/NetSerializerValuePointer\"\u003eNetSerializerValuePointer\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eSource\u003c/td\u003e\n      \u003ctd\u003eA pointer to the non-quantized source data.\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/cad7cc27-24f8-4db9-b1bb-e0b8ccb1d6fe/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/IrisCore/Iris/Serialization/NetSerializerValuePointer\"\u003eNetSerializerValuePointer\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003eTarget\u003c/td\u003e\n      \u003ctd\u003eA pointer to the quantized state buffer which contains valid, but unknown, quantized state.\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "Parameters passed to a NetSerializer's Quantize function.",
+  "document_type": null,
+  "hash_id": "zqmrg",
+  "id": 3650023,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "9kWwK",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Runtime/IrisCore/Iris/Serialization/FNetQuantizeArgs",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "FNetQuantizeArgs",
+  "updated_at": "2024-11-14T00:01:12.649+00:00",
+  "views_count": 0
+}

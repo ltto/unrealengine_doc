@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/GameplayAbilities\"\u003eGameplayAbilities\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eType\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003etypedef TMulticastDelegate_OneParam\u0026lt; void, int32 \u0026gt; FTargetingRejectedConfirmation  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/GameplayAbilities\"\u003eGameplayAbilities\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/AbilitySystemComponent.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"AbilitySystemComponent.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003eUAbilitySystemComponent\u003c/p\u003e\n\n\u003cp\u003eA component to easily interface with the 3 aspects of the AbilitySystem:\u003c/p\u003e\n\n\u003cp\u003eGameplayAbilities: -Provides a way to give/assign abilities that can be used (by a player or AI for example) -Provides management of instanced abilities (something must hold onto them) -Provides replication functionality -Ability state must always be replicated on the \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/GameplayAbilities/Abilities/UGameplayAbility\"\u003eUGameplayAbility\u003c/a\u003e itself, but UAbilitySystemComponent provides RPC replication for the actual activation of abilities\u003c/p\u003e\n\n\u003cp\u003eGameplayEffects: -Provides an \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/GameplayAbilities/FActiveGameplayEffectsContainer\"\u003eFActiveGameplayEffectsContainer\u003c/a\u003e for holding active GameplayEffects -Provides methods for applying GameplayEffects to a target or to self -Provides wrappers for querying information in FActiveGameplayEffectsContainers (duration, magnitude, etc) -Provides methods for clearing/remove GameplayEffects\u003c/p\u003e\n\n\u003cp\u003eGameplayAttributes -Provides methods for allocating and initializing attribute sets -Provides methods for getting AttributeSets Called when a targeting actor rejects target confirmation\u003c/p\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "UAbilitySystemComponent",
+  "document_type": null,
+  "hash_id": "KOa8q",
+  "id": 3375494,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "dPEnQ",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/GameplayAbilities/FTargetingRejectedConfirmation",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "FTargetingRejectedConfirmation",
+  "updated_at": "2024-11-13T05:11:26.400+00:00",
+  "views_count": 6
+}

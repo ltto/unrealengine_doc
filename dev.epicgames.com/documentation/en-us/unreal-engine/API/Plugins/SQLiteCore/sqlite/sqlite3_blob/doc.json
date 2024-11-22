@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore\"\u003eSQLiteCore\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite\"\u003esqlite\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eType\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003etypedef struct sqlite3_blob sqlite3_blob  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore\"\u003eSQLiteCore\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/Runtime/Database/SQLiteCore/Source/SQLiteCore/Public/sqlite/sqlite3.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"sqlite/sqlite3.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003eThe interface to the virtual-table mechanism defined above (back up to a comment remarkably similar to this one) is currently considered to be experimental. The interface might change in incompatible ways. If this is a problem for you, do not use the interface at this time.\u003c/p\u003e\n\n\u003cp\u003eWhen the virtual-table mechanism stabilizes, we will declare the interface fixed, support it indefinitely, and remove this comment. CAPI3REF: A Handle To An Open BLOB KEYWORDS: {BLOB handle} {BLOB handles}\u003c/p\u003e\n\n\u003cp\u003eAn instance of this object represents an open BLOB on which [sqlite3_blob_open | incremental BLOB I/O] can be performed. ^Objects of this type are created by [\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite/sqlite3_blob_open\"\u003esqlite3_blob_open()\u003c/a\u003e] and destroyed by [\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite/sqlite3_blob_close\"\u003esqlite3_blob_close()\u003c/a\u003e]. ^The [\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite/sqlite3_blob_read\"\u003esqlite3_blob_read()\u003c/a\u003e] and [\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite/sqlite3_blob_write\"\u003esqlite3_blob_write()\u003c/a\u003e] interfaces can be used to read or write small subsections of the BLOB. ^The [\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite/sqlite3_blob_bytes\"\u003esqlite3_blob_bytes()\u003c/a\u003e] interface returns the size of the BLOB in bytes.\u003c/p\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "The interface to the virtual-table mechanism defined above (back up to a comment remarkably similar to this one) is currently considered to be experimental.",
+  "document_type": null,
+  "hash_id": "AXXV12",
+  "id": 3856484,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "q00ONe",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/SQLiteCore/sqlite/sqlite3_blob",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "sqlite3_blob",
+  "updated_at": "2024-11-13T12:59:53.223+00:00",
+  "views_count": 0
+}

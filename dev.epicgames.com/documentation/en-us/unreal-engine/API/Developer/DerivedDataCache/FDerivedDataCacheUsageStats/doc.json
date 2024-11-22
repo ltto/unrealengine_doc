@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Developer\"\u003eDeveloper\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Developer/DerivedDataCache\"\u003eDerivedDataCache\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Developer/DerivedDataCache\"\u003eDerivedDataCache\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Source/Developer/DerivedDataCache/Public/DerivedDataCacheUsageStats.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"DerivedDataCacheUsageStats.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003eclass FDerivedDataCacheUsageStats  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003eUsage stats for the derived data cache nodes. At the end of the app or commandlet, the DDC can be asked to gather usage stats for each of the nodes in the DDC graph, which are accumulated into a \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/Core/Containers/TMap\"\u003eTMap\u003c/a\u003e of Name-\u003eStats. The Stats portion is this class.\u003c/p\u003e\n\n\u003cp\u003eThe class exposes various high-level routines to time important aspects of the DDC, mostly focusing on performance of GetCachedData, PutCachedData, and CachedDataProbablyExists. This class will track time taken, calls made, hits, misses, bytes processed, and do it for two buckets: 1) the main thread and 2) all other threads. The reason is because any time spent in the DDC on the main thread is considered meaningful, as DDC access is generally expected to be async from helper threads.\u003c/p\u003e\n\n\u003cp\u003eThe class goes through a bit of trouble to use thread-safe access calls for task-thread usage, and simple, fast accumulators for game-thread usage, since it's guaranteed to not be written to concurrently. The class also limits itself to checking the thread once at construction.\u003c/p\u003e\n\n\u003cp\u003eUsage would be something like this in a concrete FDerivedDataBackendInterface implementation: class MyBackend : public FDerivedDataBackendInterface { \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Developer/DerivedDataCache/FDerivedDataCacheUsageStats\"\u003eFDerivedDataCacheUsageStats\u003c/a\u003e UsageStats; public: \u003coverride CachedDataProbablyExists\u003e { auto Timer = UsageStats.TimeExists(); ... } \u003coverride GetCachedData\u003e {\n auto Timer = UsageStats.TimeGet(); ... \u003cif it's a cache hit\u003e Timer.AddHit(DataSize); // Misses are automatically tracked } \u003coverride PutCachedData\u003e { auto Timer = UsageStats.TimePut(); ... \u003cif the data will really be Put\u003e Timer.AddHit(DataSize); // Misses are automatically tracked } \u003coverride GatherUsageStats\u003e { // Add this node's UsageStats to the usage map. Your Key name should be UNIQUE to the entire graph (so use the file name, or pointer to this if you have to). UsageStatsMap.Add(FString::Printf(TEXT(\"%s: \u003cSome unique name for this node instance\u003e\"), *GraphPath), UsageStats); } }\u003c/p\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "Copyright Epic Games, Inc. All Rights Reserved.",
+  "document_type": null,
+  "hash_id": "pWXMo",
+  "id": 3280027,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "6bElz",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Developer/DerivedDataCache/FDerivedDataCacheUsageStats",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "FDerivedDataCacheUsageStats",
+  "updated_at": "2024-11-12T22:11:04.271+00:00",
+  "views_count": 0
+}

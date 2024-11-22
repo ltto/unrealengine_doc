@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/GameplayAbilities\"\u003eGameplayAbilities\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/GameplayAbilities/Abilities\"\u003eAbilities\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eType\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003etypedef TMulticastDelegate_OneParam\u0026lt; void, UGameplayAbility \u0026#42; \u0026gt; FOnGameplayAbilityEnded  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/GameplayAbilities\"\u003eGameplayAbilities\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/Abilities/GameplayAbility.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"Abilities/GameplayAbility.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/GameplayAbilities/Abilities/UGameplayAbility\"\u003eUGameplayAbility\u003c/a\u003e\u003c/p\u003e\n\n\u003cp\u003eAbilities define custom gameplay logic that can be activated or triggered.\u003c/p\u003e\n\n\u003cp\u003eThe main features provided by the AbilitySystem for GameplayAbilities are: -CanUse functionality: -Cooldowns -Costs (mana, stamina, etc) -etc\u003c/p\u003e\n\n\u003cp\u003e-Replication support -Client/Server communication for ability activation -Client prediction for ability activation\u003c/p\u003e\n\n\u003cp\u003e-Instancing support -Abilities can be non-instanced (native only) -Instanced per owner -Instanced per execution (default)\u003c/p\u003e\n\n\u003cp\u003e-Basic, extendable support for: -Input binding -'Giving' abilities (that can be used) to actors\u003c/p\u003e\n\n\u003cp\u003eSee GameplayAbility_Montage for an example of a non-instanced ability -Plays a montage and applies a GameplayEffect to its target while the montage is playing. -When finished, removes GameplayEffect.\u003c/p\u003e\n\n\u003cp\u003eNote on replication support: -Non instanced abilities have limited replication support. -Cannot have state (obviously) so no replicated properties -RPCs on the ability class are not possible either.\u003c/p\u003e\n\n\u003cp\u003eTo support state or event replication, an ability must be instanced. This can be done with the InstancingPolicy property. Notification delegate definition for when the gameplay ability ends\u003c/p\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "[UGameplayAbility](API\\Plugins\\GameplayAbilities\\Abilities\\UGameplayAbility)",
+  "document_type": null,
+  "hash_id": "YGy34",
+  "id": 3373793,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "mlvna",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/GameplayAbilities/Abilities/FOnGameplayAbilityEnded",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "FOnGameplayAbilityEnded",
+  "updated_at": "2024-11-13T05:03:34.197+00:00",
+  "views_count": 2
+}

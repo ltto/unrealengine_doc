@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore\"\u003eSQLiteCore\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite\"\u003esqlite\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore\"\u003eSQLiteCore\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/Runtime/Database/SQLiteCore/Source/SQLiteCore/Public/sqlite/sqlite3.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"sqlite/sqlite3.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003estruct sqlite3_vtab  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003eCAPI3REF: Virtual Table Instance Object KEYWORDS: \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite/sqlite3_vtab_1\"\u003esqlite3_vtab\u003c/a\u003e\u003c/p\u003e\n\n\u003cp\u003eEvery [virtual table module] implementation uses a subclass of this object to describe a particular instance of the [virtual table]. Each subclass will be tailored to the specific needs of the module implementation. The purpose of this superclass is to define certain fields that are common to all module implementations.\u003c/p\u003e\n\n\u003cp\u003e^Virtual tables methods can set an error message by assigning a string obtained from [\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite/sqlite3_mprintf\"\u003esqlite3_mprintf()\u003c/a\u003e] to zErrMsg. The method should take care that any prior string is freed by a call to [\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite/sqlite3_free\"\u003esqlite3_free()\u003c/a\u003e] prior to assigning a new string to zErrMsg. ^After the error message is delivered up to the client application, the string will be automatically freed by \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite/sqlite3_free\"\u003esqlite3_free()\u003c/a\u003e and the zErrMsg field will be zeroed.\u003c/p\u003e\n\n\u003ch2\u003eVariables\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/05bbbe11-40ce-4bd6-bdb5-5bd66a0f8a8e/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003eint\u003c/td\u003e\n      \u003ctd\u003enRef\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/c740e25f-cf75-406c-904d-6f066df03275/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003econst \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite/sqlite3_module_1\"\u003esqlite3_module\u003c/a\u003e *\u003c/td\u003e\n      \u003ctd\u003epModule\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/ed697a8b-9ccf-4366-a753-a0895e35ca18/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003echar *\u003c/td\u003e\n      \u003ctd\u003ezErrMsg\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "CAPI3REF: Virtual Table Instance Object KEYWORDS: [sqlite3_vtab](API\\Plugins\\SQLiteCore\\sqlite\\sqlite3_vtab_1)",
+  "document_type": null,
+  "hash_id": "xOOkdp",
+  "id": 3856818,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "JddOA0",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/SQLiteCore/sqlite/sqlite3_vtab_1",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "sqlite3_vtab",
+  "updated_at": "2024-11-13T13:00:12.276+00:00",
+  "views_count": 0
+}

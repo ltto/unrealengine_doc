@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/GameplayGraph\"\u003eGameplayGraph\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/GameplayGraph/Graph\"\u003eGraph\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eInheritance Hierarchy\u003c/h2\u003e\n\n\u003cul\u003e\n  \u003cli\u003eTDerivedGraphDeltaAction\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/GameplayGraph/Graph/TDefaultGraphEdgeDeltaAction\"\u003eTDefaultGraphEdgeDeltaAction\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/GameplayGraph/Graph/TDefaultGraphIslandDeltaAction\"\u003eTDefaultGraphIslandDeltaAction\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/GameplayGraph/Graph/TDefaultGraphIslandVertexDeltaAc-\"\u003eTDefaultGraphIslandVertexDeltaAction\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/GameplayGraph/Graph/TDefaultGraphVertexDeltaAction\"\u003eTDefaultGraphVertexDeltaAction\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/GameplayGraph\"\u003eGameplayGraph\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/Experimental/GameplayGraph/Source/GameplayGraph/Public/Graph/GraphIncrementalSerialization.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"Graph/GraphIncrementalSerialization.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003etemplate\u0026lt;typename TDerived\u0026gt;  \nstruct TDerivedGraphDeltaAction  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003e=========== README FIRST ===========\u003c/p\u003e\n\n\u003cp\u003eThis file provides the basics by which you can support incremental serialization for a \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/GameplayGraph/Graph/UGraph\"\u003eUGraph\u003c/a\u003e for any possible serialized type. There are a few concepts at work here:\u003c/p\u003e\n\u003cul\u003e\n  \u003cli\u003eThe \"Graph\" - this is the gameplay graph that you wish to serialize.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eThe \"Serializer\" - this is the class that inherits from \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/GameplayGraph/Graph/IGraphSerialization\"\u003eIGraphSerialization\u003c/a\u003e that serializes your data. There is an additional caveat: this class must implement a \"GetData\" function that returns (see next point)...\u003c/p\u003e\n\u003cul\u003e\n  \u003cli\u003eThe \"Serialized Graph Data\" - this is the object that you wish to end up with after serialization.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eWith incremental serialization we introduce:\u003c/p\u003e\n\u003cul\u003e\n  \u003cli\u003e\"Delta Actions\" - Any time the graph is changed, we add a \"Delta Action\" to a buffer. The next time Flush is called on the incremental serialization, we'd expect the actions in the buffer to get applied to the cached data and make it equivalent to the graph's current state.\u003c/li\u003e\n  \u003cli\u003eThe \"Delta Action Handler\" - This takes in a list of \"Delta Actions\" and makes the appropriate changes to the \"Serialized Graph Data\".\u003c/li\u003e\n  \u003cli\u003eThe \"TGraphIncrementalSerialization\" - this is the public interface to all of the above. Users of incremental serialization need only construct a subclass of this to use. It should under-the-hood hook up to the graph events to properly detect changes.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2\u003eFunctions\u003c/h2\u003e\n\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/aca3fe6e-45e6-4671-8176-f7e20121fa56/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/4289a5f7-ae5b-4640-bfaf-df95739c7ed1/api_function_const.png\" alt=\"Const\" loading=\"lazy\" title=\"Const\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003evoid\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/GameplayGraph/Graph/TDerivedGraphDeltaAction/Accept\"\u003eAccept\u003c/a\u003e\n (\nTDeltaActionHandler\u0026 Visitor,\u003cbr\u003e\ntypename TDeltaActionHandler::TSerializableGraph\u0026 OutGraph\u003cbr\u003e\n )\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "Copyright Epic Games, Inc. All Rights Reserved.",
+  "document_type": null,
+  "hash_id": "8JOqlX",
+  "id": 3792377,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "a7vp7w",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/GameplayGraph/Graph/TDerivedGraphDeltaAction",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "TDerivedGraphDeltaAction",
+  "updated_at": "2024-11-13T05:27:22.263+00:00",
+  "views_count": 0
+}

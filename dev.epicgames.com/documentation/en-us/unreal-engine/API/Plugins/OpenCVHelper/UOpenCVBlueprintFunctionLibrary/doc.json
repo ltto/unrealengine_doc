@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/OpenCVHelper\"\u003eOpenCVHelper\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eInheritance Hierarchy\u003c/h2\u003e\n\n\u003cul\u003e\n  \u003cli\u003eUBlueprintFunctionLibrary\u003c/li\u003e\n  \u003cli\u003eUOpenCVBlueprintFunctionLibrary\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/OpenCVHelper\"\u003eOpenCVHelper\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/Runtime/OpenCV/Source/OpenCVHelper/Public/OpenCVBlueprintFunctionLibrary.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"OpenCVBlueprintFunctionLibrary.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003eUCLASS \u0026#40;BlueprintType\u0026#41;  \nclass UOpenCVBlueprintFunctionLibrary : public UBlueprintFunctionLibrary  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eFunctions\u003c/h2\u003e\n\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/f97111df-4753-4817-b175-f901ac1d6cc7/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/6e3c6a0d-338d-4014-9cbc-a51666c3d778/api_function_static.png\" alt=\"Static\" loading=\"lazy\" title=\"Static\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003eint32\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/OpenCVHelper/UOpenCVBlueprintFunctionLibrary/OpenCVArucoDetectMarkers\"\u003eOpenCVArucoDetectMarkers\u003c/a\u003e\n (\nconst UTextureRenderTarget2D* InRenderTarget,\u003cbr\u003e\nconst \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/OpenCVHelper/EOpenCVArucoDictionary\"\u003eEOpenCVArucoDictionary\u003c/a\u003e InDictionary,\u003cbr\u003e\nconst \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/OpenCVHelper/EOpenCVArucoDictionarySize\"\u003eEOpenCVArucoDictionarySize\u003c/a\u003e InDictionarySize,\u003cbr\u003e\nconst bool bDebugDrawMarkers,\u003cbr\u003e\nconst bool bEstimatePose,\u003cbr\u003e\nconst float InMarkerLengthInMeters,\u003cbr\u003e\nconst \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/OpenCVHelper/FOpenCVLensDistortionParametersB-\"\u003eFOpenCVLensDistortionParametersBase\u003c/a\u003e\u0026 InLensDistortionParameters,\u003cbr\u003e\nUTexture2D*\u0026 OutDebugTexture,\u003cbr\u003e\nTArray\u003c \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/OpenCVHelper/FOpenCVArucoDetectedMarker\"\u003eFOpenCVArucoDetectedMarker\u003c/a\u003e \u003e\u0026 OutDetectedMarkers\u003cbr\u003e\n )\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003eDetects all ArUco markers in the supplied image\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/bd06ee80-814f-480b-96c2-b172751441a7/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/bd342795-830c-46f5-be3f-d008df958ab4/api_function_static.png\" alt=\"Static\" loading=\"lazy\" title=\"Static\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/ec1b8f06-d608-468a-ad8c-52ffc7f35b90/api_function_meta.png\" alt=\"UFunction\" loading=\"lazy\" title=\"UFunction\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/2c5eedd4-0dcb-4da6-975c-e3c8957a1759/api_function_meta_blueprint.png\" alt=\"BlueprintCallable, Category, Meta\" loading=\"lazy\" title=\"BlueprintCallable, Category, Meta\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003eint32\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/OpenCVHelper/UOpenCVBlueprintFunctionLibrary/OpenCVChessboard-\"\u003eOpenCVChessboardDetectCorners\u003c/a\u003e\n (\nconst UTextureRenderTarget2D* InRenderTarget,\u003cbr\u003e\nconst FIntPoint InPatternSize,\u003cbr\u003e\nconst bool bDebugDrawCorners,\u003cbr\u003e\nUTexture2D*\u0026 OutDebugTexture,\u003cbr\u003e\nTArray\u003c FVector2D \u003e\u0026 OutDetectedCorners\u003cbr\u003e\n )\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003eDetects a camera calibration chessboard in the supplied image\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "",
+  "document_type": null,
+  "hash_id": "m1rq6",
+  "id": 3459059,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "LgeaP",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/OpenCVHelper/UOpenCVBlueprintFunctionLibrary",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "UOpenCVBlueprintFunctionLibrary",
+  "updated_at": "2024-11-13T10:36:04.078+00:00",
+  "views_count": 1
+}

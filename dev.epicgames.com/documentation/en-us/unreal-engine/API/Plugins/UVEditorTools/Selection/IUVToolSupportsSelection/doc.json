@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/UVEditorTools\"\u003eUVEditorTools\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/UVEditorTools/Selection\"\u003eSelection\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eInheritance Hierarchy\u003c/h2\u003e\n\n\u003cul\u003e\n  \u003cli\u003eIUVToolSupportsSelection\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/UVEditorTools/UUVEditorBrushSelectTool\"\u003eUUVEditorBrushSelectTool\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/UVEditorTools/UUVEditorLayoutTool\"\u003eUUVEditorLayoutTool\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/UVEditorTools/UUVEditorRecomputeUVsTool\"\u003eUUVEditorRecomputeUVsTool\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/UVEditorTools/UUVEditorTexelDensityTool\"\u003eUUVEditorTexelDensityTool\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/UVEditorTools/UUVEditorTransformTool\"\u003eUUVEditorTransformTool\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/UVEditorTools/UUVEditorUVSnapshotTool\"\u003eUUVEditorUVSnapshotTool\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/UVEditorTools/UUVSelectTool\"\u003eUUVSelectTool\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/UVEditorTools\"\u003eUVEditorTools\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/Editor/UVEditor/Source/UVEditorTools/Public/Selection/UVToolSelectionAPI.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"Selection/UVToolSelectionAPI.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003eclass IUVToolSupportsSelection  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003eIf a tool does not inherit from \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/UVEditorTools/Selection/IUVToolSupportsSelection\"\u003eIUVToolSupportsSelection\u003c/a\u003e, then selection will automatically be cleared before the tool invocation via an undoable transaction, to avoid a state where the selection refers to invalid items after tool completion. If a tool does inherit from \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/UVEditorTools/Selection/IUVToolSupportsSelection\"\u003eIUVToolSupportsSelection\u003c/a\u003e, then the UV editor will not clear the selection before invocation, allowing the tool to use it. However, the tool is expected to properly deal with selection itself and avoid an invalid state (including avoiding incorrect undo/redo selection event ordering.\u003c/p\u003e\n\n\u003ch2\u003eFunctions\u003c/h2\u003e\n\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/ef61d7c7-3937-4ddd-b346-a1163a2b1ef2/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/f84708bd-b4ed-48fd-8fb3-558d307579bd/api_function_virtual.png\" alt=\"Virtual\" loading=\"lazy\" title=\"Virtual\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/050f5723-96d9-4f78-af1a-b125a6ad0fd9/api_function_const.png\" alt=\"Const\" loading=\"lazy\" title=\"Const\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003ebool\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/UVEditorTools/Selection/IUVToolSupportsSelection/SupportsUnsetEle-\"\u003eSupportsUnsetElementAppliedMeshSelections\u003c/a\u003e ()\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003eA tool that returns false here will have the unset element selections (ie selections of triangles that don't have associated UV's) cleared before its invocation.\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "If a tool does not inherit from [IUVToolSupportsSelection](API\\Plugins\\UVEditorTools\\Selection\\IUVToolSupportsSelection), then selection will automatically be cleared before the tool invocation via an undoable transaction, to avoid a state where the selection refers to invalid items after tool completion.",
+  "document_type": null,
+  "hash_id": "PnYe8",
+  "id": 3494195,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "dkN8b",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/UVEditorTools/Selection/IUVToolSupportsSelection",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "IUVToolSupportsSelection",
+  "updated_at": "2024-11-13T13:44:48.194+00:00",
+  "views_count": 1
+}

@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore\"\u003eSQLiteCore\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite\"\u003esqlite\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eType\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003etypedef struct sqlite3_value sqlite3_value  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore\"\u003eSQLiteCore\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/Runtime/Database/SQLiteCore/Source/SQLiteCore/Public/sqlite/sqlite3.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"sqlite/sqlite3.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003eCAPI3REF: Dynamically Typed Value Object KEYWORDS: {protected sqlite3_value} {unprotected sqlite3_value}\u003c/p\u003e\n\n\u003cp\u003eSQLite uses the sqlite3_value object to represent all values that can be stored in a database table. SQLite uses dynamic typing for the values it stores. ^Values stored in sqlite3_value objects can be integers, floating point values, strings, BLOBs, or NULL.\u003c/p\u003e\n\n\u003cp\u003eAn sqlite3_value object may be either \"protected\" or \"unprotected\". Some interfaces require a protected sqlite3_value. Other interfaces will accept either a protected or an unprotected sqlite3_value. Every interface that accepts sqlite3_value arguments specifies whether or not it requires a protected sqlite3_value. The [\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite/sqlite3_value_dup\"\u003esqlite3_value_dup()\u003c/a\u003e] interface can be used to construct a new protected sqlite3_value from an unprotected sqlite3_value.\u003c/p\u003e\n\n\u003cp\u003eThe terms \"protected\" and \"unprotected\" refer to whether or not a mutex is held. An internal mutex is held for a protected sqlite3_value object but no mutex is held for an unprotected sqlite3_value object. If SQLite is compiled to be single-threaded (with [SQLITE_THREADSAFE=0] and with [\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite/sqlite3_threadsafe\"\u003esqlite3_threadsafe()\u003c/a\u003e] returning 0) or if SQLite is run in one of reduced mutex modes [SQLITE_CONFIG_SINGLETHREAD] or [SQLITE_CONFIG_MULTITHREAD] then there is no distinction between protected and unprotected sqlite3_value objects and they can be used interchangeably. However, for maximum code portability it is recommended that applications still make the distinction between protected and unprotected sqlite3_value objects even when not strictly required.\u003c/p\u003e\n\n\u003cp\u003e^The sqlite3_value objects that are passed as parameters into the implementation of [application-defined SQL functions] are protected. ^The sqlite3_value object returned by [\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite/sqlite3_column_value\"\u003esqlite3_column_value()\u003c/a\u003e] is unprotected. Unprotected sqlite3_value objects may only be used as arguments to [\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite/sqlite3_result_value\"\u003esqlite3_result_value()\u003c/a\u003e], [\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite/sqlite3_bind_value\"\u003esqlite3_bind_value()\u003c/a\u003e], and [\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite/sqlite3_value_dup\"\u003esqlite3_value_dup()\u003c/a\u003e]. The [sqlite3_value_blob | \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/SQLiteCore/sqlite/sqlite3_value_type\"\u003esqlite3_value_type()\u003c/a\u003e] family of interfaces require protected sqlite3_value objects.\u003c/p\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "CAPI3REF: Dynamically Typed Value Object KEYWORDS: {protected sqlite3_value} {unprotected sqlite3_value}",
+  "document_type": null,
+  "hash_id": "kddxqj",
+  "id": 3856785,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "MzzYVO",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/SQLiteCore/sqlite/sqlite3_value",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "sqlite3_value",
+  "updated_at": "2024-11-13T13:00:09.234+00:00",
+  "views_count": 2
+}

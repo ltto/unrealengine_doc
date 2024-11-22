@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Developer\"\u003eDeveloper\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Developer/FunctionalTesting\"\u003eFunctionalTesting\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eInheritance Hierarchy\u003c/h2\u003e\n\n\u003cul\u003e\n  \u003cli\u003eUBlueprintFunctionLibrary\u003c/li\u003e\n  \u003cli\u003eUFunctionalTestUtilityLibrary\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Developer/FunctionalTesting\"\u003eFunctionalTesting\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Source/Developer/FunctionalTesting/Classes/FunctionalTestUtilityLibrary.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"FunctionalTestUtilityLibrary.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003eUCLASS \u0026#40;\u0026#41;  \nclass UFunctionalTestUtilityLibrary : public UBlueprintFunctionLibrary  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003eUsed to expose C++ functions to tests that we don't want to make BP accessible in the engine itself.\u003c/p\u003e\n\n\u003ch2\u003eFunctions\u003c/h2\u003e\n\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/14f811e9-50cf-45a8-9897-49fd2fbff613/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/eb1a2a56-d72e-49c4-8e5b-30c3b75c7e6d/api_function_static.png\" alt=\"Static\" loading=\"lazy\" title=\"Static\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/cbdfcd52-59e4-4e29-a847-e68b54326f7b/api_function_meta.png\" alt=\"UFunction\" loading=\"lazy\" title=\"UFunction\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/846a2594-5e56-48c6-8ad7-b26d65112968/api_function_meta_blueprint.png\" alt=\"BlueprintCallable, Category, Meta\" loading=\"lazy\" title=\"BlueprintCallable, Category, Meta\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Developer/FunctionalTesting/UTraceQueryTestResults\"\u003eUTraceQueryTestResults\u003c/a\u003e *\u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Developer/FunctionalTesting/UFunctionalTestUtilityLibrary/TraceChannelTest-\"\u003eTraceChannelTestUtil\u003c/a\u003e\n (\nUObject* WorldContextObject,\u003cbr\u003e\nconst \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Developer/FunctionalTesting/FTraceChannelTestBatchOptions\"\u003eFTraceChannelTestBatchOptions\u003c/a\u003e\u0026 BatchOptions,\u003cbr\u003e\nconst FVector Start,\u003cbr\u003e\nconst FVector End,\u003cbr\u003e\nfloat SphereCapsuleRadius,\u003cbr\u003e\nfloat CapsuleHalfHeight,\u003cbr\u003e\nFVector BoxHalfSize,\u003cbr\u003e\nconst FRotator Orientation,\u003cbr\u003e\nETraceTypeQuery TraceChannel,\u003cbr\u003e\nTArray\u003c TEnumAsByte\u003c EObjectTypeQuery \u003e \u003e ObjectTypes,\u003cbr\u003e\nFName ProfileName,\u003cbr\u003e\nbool bTraceComplex,\u003cbr\u003e\nconst TArray\u003c AActor* \u003e\u0026 ActorsToIgnore,\u003cbr\u003e\nbool bIgnoreSelf,\u003cbr\u003e\nEDrawDebugTrace::Type DrawDebugType,\u003cbr\u003e\nFLinearColor TraceColor,\u003cbr\u003e\nFLinearColor TraceHitColor,\u003cbr\u003e\nfloat DrawTime\u003cbr\u003e\n )\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003eHelper function to trace and permute many options at once\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "Used to expose C++ functions to tests that we don't want to make BP accessible in the engine itself.",
+  "document_type": null,
+  "hash_id": "PXQjq",
+  "id": 3281451,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "WAr09",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Developer/FunctionalTesting/UFunctionalTestUtilityLibrary",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "UFunctionalTestUtilityLibrary",
+  "updated_at": "2024-11-12T22:16:12.268+00:00",
+  "views_count": 0
+}

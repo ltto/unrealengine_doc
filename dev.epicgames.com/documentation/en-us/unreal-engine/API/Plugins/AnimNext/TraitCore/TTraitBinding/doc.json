@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNext\"\u003eAnimNext\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNext/TraitCore\"\u003eTraitCore\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNext\"\u003eAnimNext\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/Experimental/AnimNext/Source/AnimNext/Public/TraitCore/TraitBinding.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"TraitCore/TraitBinding.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eSource\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/Experimental/AnimNext/Source/AnimNext/Public/TraitCore/TraitStackBinding.h\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003etemplate\u0026lt;class TraitInterface\u0026gt;  \nstruct TTraitBinding  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNext/TraitCore/TTraitBinding\"\u003eTTraitBinding\u003c/a\u003e\u003c/p\u003e\n\n\u003cp\u003eA templated proxy for trait interfaces. It is meant to be specialized per interface in order to allow a clean API and avoid human error. It wraps the necessary information to bind a trait to a specific interface. See existing interfaces for examples.\u003c/p\u003e\n\n\u003cp\u003eHere, we forward declare the template which every interface must specialize. Because we rely on specialization, it must be defined within the UE::AnimNext namespace where the declaration exists.\u003c/p\u003e\n\n\u003cp\u003eSpecializations must derive from \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNext/TraitCore/FTraitBinding\"\u003eFTraitBinding\u003c/a\u003e to provide the necessary machinery.\u003c/p\u003e\n\n\u003ch2\u003eSpecializations\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNextAnimGraph/TraitInterfaces/TTraitBinding_IBlendStack\"\u003eTTraitBinding\u003c IBlendStack \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNextAnimGraph/TraitInterfaces/TTraitBinding_IContinuousBlend\"\u003eTTraitBinding\u003c IContinuousBlend \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNextAnimGraph/TraitInterfaces/TTraitBinding_IDiscreteBlend\"\u003eTTraitBinding\u003c IDiscreteBlend \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNextAnimGraph/TraitInterfaces/TTraitBinding_IEvaluate\"\u003eTTraitBinding\u003c IEvaluate \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNext/TraitInterfaces/TTraitBinding_IGarbageCollection\"\u003eTTraitBinding\u003c IGarbageCollection \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNextAnimGraph/TraitInterfaces/TTraitBinding_IGroupSynchronizat-\"\u003eTTraitBinding\u003c IGroupSynchronization \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNext/TraitInterfaces/TTraitBinding_IHierarchy\"\u003eTTraitBinding\u003c IHierarchy \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNextAnimGraph/TraitInterfaces/TTraitBinding_IInertializerBlend\"\u003eTTraitBinding\u003c IInertializerBlend \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNextAnimGraph/TraitInterfaces/TTraitBinding_ISmoothBlend\"\u003eTTraitBinding\u003c ISmoothBlend \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNextAnimGraph/TraitInterfaces/TTraitBinding_ITimeline\"\u003eTTraitBinding\u003c ITimeline \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNextAnimGraph/TraitInterfaces/TTraitBinding_IUpdate\"\u003eTTraitBinding\u003c IUpdate \u003e\u003c/a\u003e\u003cbr /\u003e\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNextAnimGraph/TraitInterfaces/TTraitBinding_IUpdateTraversal\"\u003eTTraitBinding\u003c IUpdateTraversal \u003e\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eSee Also\u003c/h2\u003e\n\n\u003cp\u003eIUpdate\u003c/p\u003e\n\n\u003cp\u003eIEvaluate\u003c/p\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/AnimNext/TraitInterfaces/IHierarchy\"\u003eIHierarchy\u003c/a\u003e\u003c/p\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "[TTraitBinding](API\\Plugins\\AnimNext\\TraitCore\\TTraitBinding)",
+  "document_type": null,
+  "hash_id": "1Mm3B",
+  "id": 3736845,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "WGw6l",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/AnimNext/TraitCore/TTraitBinding",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "TTraitBinding",
+  "updated_at": "2024-11-13T01:15:32.026+00:00",
+  "views_count": 0
+}

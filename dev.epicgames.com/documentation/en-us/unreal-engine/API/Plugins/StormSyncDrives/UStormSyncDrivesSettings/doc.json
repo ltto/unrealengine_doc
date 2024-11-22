@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins\"\u003ePlugins\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/StormSyncDrives\"\u003eStormSyncDrives\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eInheritance Hierarchy\u003c/h2\u003e\n\n\u003cul\u003e\n  \u003cli\u003eUDeveloperSettings\u003c/li\u003e\n  \u003cli\u003eUStormSyncDrivesSettings\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/StormSyncDrives\"\u003eStormSyncDrives\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Plugins/Experimental/StormSync/Source/StormSyncDrives/Public/StormSyncDrivesSettings.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"StormSyncDrivesSettings.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003eUCLASS \u0026#40;MinimalAPI, Config\u0026#61;Game, defaultconfig, DisplayName\u0026#61;\u0026quot;Mount Points Settings\u0026quot;\u0026#41;  \nclass UStormSyncDrivesSettings : public UDeveloperSettings  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003eSettings for the StormSyncDrives module.\u003c/p\u003e\n\n\u003cp\u003eHandle configuration for shared network or local mounted drives.\u003c/p\u003e\n\n\u003cp\u003eConfiguration must adhere to the following rules:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eShould not have multiple entries with same mount point and / or directory (Mount Paths / Directories must have unique values)\u003c/li\u003e\n  \u003cli\u003eMount Points and Directories must not be empty\u003c/li\u003e\n  \u003cli\u003eMount Point cannot be \"/\", must start with a leading \"/\" and should not end with a trailing \"/\"\u003c/li\u003e\n  \u003cli\u003eMount Point cannot contain \"//\" or any other invalid characters (:*?\"\u003c*|' ,.\u0026!~\n\\r\\t#)\u003c/li\u003e\n  \u003cli\u003eMount Point when outside \"/Game\" must be one level only (eg. /Example is ok, /Example/Path is not)\u003c/li\u003e\n  \u003cli\u003eMount Directory must match an existing filesystem path\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eChanges done here will be validated and errors logged to message log.\u003c/p\u003e\n\n\u003cp\u003eIf successful, mount points will be updated and should be available in the content browser.\u003c/p\u003e\n\n\u003ch2\u003eVariables\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/d3a5fc9d-f675-42f5-9e8c-58e71b1b5241/api_variable_public.png\" alt=\"Public variable\" loading=\"lazy\" title=\"Public variable\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/b439a72a-0d50-4454-861e-bcfda87a6dc1/api_variable_meta.png\" alt=\"UProperty\" loading=\"lazy\" title=\"UProperty\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/6ce8d140-85d2-479c-a5e2-7bb6e40b4930/api_variable_meta_editor.png\" alt=\"Category, EditAnywhere, Meta\" loading=\"lazy\" title=\"Category, EditAnywhere, Meta\" convert=\"false\" width=\"18\" /\u003e \u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/daf3c7a8-c581-4fd0-b1cc-b18fa9c90fee/api_variable_meta_serialization.png\" alt=\"Config\" loading=\"lazy\" title=\"Config\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003eTArray\u003c \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/StormSyncDrives/FStormSyncMountPointConfig\"\u003eFStormSyncMountPointConfig\u003c/a\u003e \u003e\u003c/td\u003e\n      \u003ctd\u003eMountPoints\u003c/td\u003e\n      \u003ctd\u003eList of mounted drives configuration\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eConstructors\u003c/h2\u003e\n\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/a65e609f-672d-4581-a741-aa9669c3b2dd/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/StormSyncDrives/UStormSyncDrivesSettings/__ctor\"\u003eUStormSyncDrivesSettings\u003c/a\u003e ()\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "Settings for the StormSyncDrives module.",
+  "document_type": null,
+  "hash_id": "055Oa6",
+  "id": 3857917,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "111zAW",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Plugins/StormSyncDrives/UStormSyncDrivesSettings",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "UStormSyncDrivesSettings",
+  "updated_at": "2024-11-13T13:08:39.322+00:00",
+  "views_count": 0
+}

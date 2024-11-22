@@ -1,0 +1,40 @@
+{
+  "application_families": [
+    "unreal_engine"
+  ],
+  "applications": [
+    {
+      "id": 3581142,
+      "major_version": "5",
+      "type": "unreal_engine",
+      "version": "5.5"
+    }
+  ],
+  "blocks": [
+    {
+      "content_html": "\u003ch2\u003eNavigation\u003c/h2\u003e\n\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API\"\u003eUnreal Engine C++ API Reference\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime\"\u003eRuntime\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MovieScene\"\u003eMovieScene\u003c/a\u003e \u003e \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MovieScene/EntitySystem\"\u003eEntitySystem\u003c/a\u003e\u003c/p\u003e\n\n\u003ch2\u003eInheritance Hierarchy\u003c/h2\u003e\n\n\u003cul\u003e\n  \u003cli\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MovieScene/EntitySystem/TSetPropertyValuesImpl\"\u003eTSetPropertyValuesImpl\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003eTSetPropertyValues\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003ch2\u003eReferences\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003e \u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eModule\u003c/td\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MovieScene\"\u003eMovieScene\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eHeader\u003c/td\u003e\n      \u003ctd\u003e/Engine/Source/Runtime/MovieScene/Public/EntitySystem/MovieScenePropertySystemTypes.h\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd\u003eInclude\u003c/td\u003e\n      \u003ctd\u003e#include \"EntitySystem/MovieScenePropertySystemTypes.h\"\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eSyntax\u003c/h2\u003e\n\n\u003cpre\u003e\u003ccode\u003etemplate\u0026lt;typename PropertyTraits\u0026gt;  \nstruct TSetPropertyValues : public UE::MovieScene::TSetPropertyValuesImpl\u0026lt; PropertyTraits, PropertyTraits::MetaDataType \u0026gt;  \n\u003c/code\u003e\u003c/pre\u003e\n\n\u003ch2\u003eRemarks\u003c/h2\u003e\n\n\u003cp\u003eStateless entity task that will apply values to properties. Three types of property are supported: Custom native accessor functions, fast pointer offset, or \u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MovieScene/FTrackInstancePropertyBindings\"\u003eFTrackInstancePropertyBindings\u003c/a\u003e\u003c/p\u003e\n\n\u003cp\u003eCan be invoked in one of 2 ways: either with a specific property type through a per-entity iteration: TComponentTypeID\u003cFCustomPropertyIndex\u003e CustomProperty = ...;\nTComponentTypeID\u003cFTransform\u003e TransformComponent = ...;\nTComponentTypeID\u003cUObject*\u003e BoundObject = ...;\u003c/p\u003e\n\n\u003cp\u003eFEntityTaskBuilder()\n.Read(BoundObject)\n.Read(CustomProperty)\n.Read(TransformComponent)\n.Dispatch_PerEntity\u003cTSetPropertyValues\u003cFTransform\u003e\u003e( ... );\u003c/p\u003e\n\n\u003cp\u003eOr via a combinatorial task that iterates all entities with any one of the property components: TComponentTypeID\u003cuint16\u003e FastPropertyOffset = ...;\nTComponentTypeID\u003cTSharedPtr\u003cFTrackInstancePropertyBindings\u003e\u003e SlowProperty = ...;\u003c/p\u003e\n\n\u003cp\u003eFEntityTaskBuilder()\n.Read(BoundObject)\n.ReadOneOf(CustomProperty, FastProperty, SlowProperty)\n.Read(TransformComponent)\n.Dispatch_PerAllocation\u003cTSetPropertyValues\u003cFTransform\u003e\u003e( ... );\u003c/p\u003e\n\n\u003ch2\u003eConstructors\u003c/h2\u003e\n\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003e \u003c/th\u003e\n      \u003cth\u003eType\u003c/th\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003cimg src=\"https://d1iv7db44yhgxn.cloudfront.net/documentation/images/2d9047f8-624a-4d08-9347-272fe2661693/api_function_public.png\" alt=\"Public function\" loading=\"lazy\" title=\"Public function\" convert=\"false\" width=\"18\" /\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n      \u003ctd\u003e\u003cdiv\u003e\n\u003cp\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MovieScene/EntitySystem/TSetPropertyValues/__ctor\"\u003eTSetPropertyValues\u003c/a\u003e\n (\n\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MovieScene/EntitySystem/ICustomPropertyRegistration\"\u003eICustomPropertyRegistration\u003c/a\u003e* InCustomProperties\u003cbr\u003e\n )\u003c/p\u003e\n\u003c/div\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\n\u003ch2\u003eTypedefs\u003c/h2\u003e\n\n\u003ctable\u003e\n  \u003cthead\u003e\n    \u003ctr\u003e\n      \u003cth\u003eName\u003c/th\u003e\n      \u003cth\u003eDescription\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003ctd\u003e\u003ca href=\"https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/MovieScene/EntitySystem/TSetPropertyValues/ParamType\"\u003eParamType\u003c/a\u003e\u003c/td\u003e\n      \u003ctd\u003e \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+      "settings": {
+        "is_hidden": false
+      },
+      "type": "markdown"
+    }
+  ],
+  "description": "Stateless entity task that will apply values to properties.",
+  "document_type": null,
+  "hash_id": "rVV14",
+  "id": 3660419,
+  "locale": "en-us",
+  "prereq_documents": [],
+  "readiness": "production",
+  "related_documents": [],
+  "revision_hash_id": "JDo5l",
+  "seo_description": null,
+  "seo_slug": null,
+  "seo_title": null,
+  "slug": "API/Runtime/MovieScene/EntitySystem/TSetPropertyValues",
+  "source": "ue_cpp_api_external",
+  "tags": [],
+  "title": "TSetPropertyValues",
+  "updated_at": "2024-11-14T00:50:21.762+00:00",
+  "views_count": 0
+}
